@@ -14,17 +14,29 @@ Realmente es difícil encontrar una industria u ocupación donde la tecnología 
 ### Turismo ([AirBnb](https://www.airbnb.mx/))
 AirBnb es una plataforma que conecta a viajeros de todo el mundo con residentes locales del lugar de destino. Permite hacer reservaciones en casas o departamentos locales para tener una experiencia más enriquecedora del lugar de destino.
 
+![AirBnb](https://github.com/katiearriagam/tech-course/blob/master/images/airbnb.PNG)
+
 ### Salud ([Fitbit](https://www.fitbit.com/mx/home))
-Fitbit es una cadena de productos que permiten recolectar datos de la actividad física del usuario, así como sus patrones de sueño, datos cardiovasculares y demás. Tiene la finalidad de dar seguimiento al progreso y 
+Fitbit es una cadena de productos que permiten recolectar datos de la actividad física del usuario, así como sus patrones de sueño, datos cardiovasculares y demás. Tiene la finalidad de dar seguimiento al estado de salud del usuario.
+
+![Fitbit](https://github.com/katiearriagam/tech-course/blob/master/images/fitbit.PNG)
 
 ### Cocina ([Kitchen Stories](https://kitchenstories.io/en))
 Kitchen Stories es una aplicación web y móvil que funciona como un sistema recomendador de recetas de acuerdo a un conjunto de ingredientes, una dieta en específico, tiempo de preparación, etc.
 
+![Kitchen Stories](https://github.com/katiearriagam/tech-course/blob/master/images/kitchenstories.PNG)
+
 ### Periodismo ([The New Yorker](https://www.newyorker.com/))
 La mayoría de los medios ya se han movido a plataformas en línea para hacer la información más accesible en todo momento. Esto ayuda a los usuarios a que puedan suscribirse a temas de interés y darles seguimiento.
+
+![The New Yorker](https://github.com/katiearriagam/tech-course/blob/master/images/theny.PNG)
 
 ### Entretenimiento ([Netflix](https://www.netflix.com/browse))
 Netflix es una plataforma de entretenimiento que brinda a sus usuarios un servicio de transmisión en línea de películas, series y documentales. También cuenta con un sistema recomendador para sugerir nuevo material de entretenimiento a sus usuarios.
 
+![Netflix](https://github.com/katiearriagam/tech-course/blob/master/images/netflix.PNG)
+
 ### Diseño y arte ([AutoCAD](https://www.autodesk.com/products/autocad/overview))
 AutoCAD es una herramienta de diseño computarizado que permite al usuario modelar productos o planos y verificas que cumplan con las necesidades del cliente, generar diseños realistas con diferentes materiales y demás.
+
+![AutoCAD](https://github.com/katiearriagam/tech-course/blob/master/images/autocad.png)
