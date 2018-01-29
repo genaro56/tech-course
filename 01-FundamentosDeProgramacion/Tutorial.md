@@ -1,13 +1,27 @@
 # Fundamentos de programación
 
-#### Objetivos y alcance
-Esta sesión cubre una corta introducción sobre la programación como una herramienta poderosa e importante en la actualidad. También comenzarán las sesiones prácticas con ayuda de tutoriales guiados por CodeAcademy. 
+### Contenidos
+- [Objetivos y alcance](#objectives) 
+- [¿Qué es programar?](#whatIs)  
+- [Áreas de aplicación](#areas) 
+- [¿Por qué aprender a programar?](#why) 
+- [JavaScript](#js) 
+- [Preparación](#prep) 
+- [Tutores: Evidencia de preparación de la sesión](#tutores) 
+- [Actividad 1: Introducción a Javascript - Learn JavaScript: Introduction](#act1) 
+- [Actividad 2: Variables](#act2) 
+- [Actividad 3: Control Flow](#act3) 
 
+<a name="objectives"/>
+### Objetivos y alcance
+Esta sesión cubre una corta introducción sobre la programación como una herramienta poderosa e importante en la actualidad. También comenzarán las sesiones prácticas con ayuda de tutoriales guiados por CodeAcademy. 
 Se cubrirán algunos fundamentos de programación con actividades prácticas en el lenguaje JavaScript.
 
+<a name="whatIs"/>
 ## ¿Qué es programar?
-Actualmente contamos con dispositivos y aplicaciones sumamente poderosos al alcance de nuestras manos (nuestro teléfono celular, por ejemplo). Detrás de ello, hay un conjunto de instrucciones que los dispositivos pueden seguir para saber qué hacer y cómo ejecutar este conjunto de instrucciones es el programa (o código) con el que cuenta el dispotivo o aplicación.
+Actualmente contamos con dispositivos y aplicaciones sumamente poderosos al alcance de nuestras manos (nuestro teléfono celular, por ejemplo). Detrás de ello, hay un conjunto de instrucciones que los dispositivos pueden seguir para saber qué hacer y cómo ejecutar este conjunto de instrucciones es el programa (o código) con el que cuenta el dispositivo o aplicación.
 
+<a name="areas"/>
 ### Áreas de aplicación
 Realmente es difícil encontrar una industria u ocupación donde la tecnología (y por ende la programación) no esté ya siendo implementada. Pero con la finalidad de dar algunos ejemplos, aquí hay algunas aplicaciones que se han creado para diversas áreas.
 
@@ -41,6 +55,7 @@ AutoCAD es una herramienta de diseño computarizado que permite al usuario model
 
 ![AutoCAD](https://github.com/katiearriagam/tech-course/blob/master/images/autocad.png)
 
+<a name="why"/>
 ### ¿Por qué aprender a programar?
 Entre las muchas razones que podríamos enlistar para aprender a programar, aquí hay algunas:
 - Ventaja competitiva en casi cualquier industria (ver ejemplos anteriores).
@@ -48,6 +63,7 @@ Entre las muchas razones que podríamos enlistar para aprender a programar, aqu�
 - Generar gran impacto: actualmente casi todo se está diseñando con orientación hacia la tecnología.
 - Mayor alcance: por medio de aplicaciones y servicios en línea, es posible alcanzar una audiencia más amplia gracias a la globalización de la tencología.
 
+<a name="js"/>
 # JavaScript
 Javascript es uno de los lenguajes de programación más conocidos por su amplio alcance. Se usa para desarrollar todo tipo de aplicaciones (móviles, web, videojuegos). Por esta razón, será el lenguaje de programación que cubrirán en las primeras sesiones del curso, y más adelante se retomará para el desarrollo de otras aplicaciones.
 
@@ -56,16 +72,19 @@ Javascript es uno de los lenguajes de programación más conocidos por su amplio
 - Uso de variables
 - Control de flujo (con estatutos condicionales)
 
+<a name="prep"/>
 ## Preparación
 1. Registrarse en [Codeacademy](https://www.codecademy.com/es/learn) - **Es importante que uses tu cuenta mientras uses Codeacademy ya que aquí se guarda tu progreso**.
 2. Verificar (si es necesario) tu cuenta e ingresar a [Codeacademy](https://www.codecademy.com/es/learn) con ella.
 3. Ingresar al curso [Introduction To JavaScript](https://www.codecademy.com/learn/introduction-to-javascript) de Codeacademy.
 
+<a name="tutores"/>
 ## Tutores: Evidencia de preparación de la sesión
 Para esta sesión, es necesario que suban al [formulario](https://goo.gl/forms/nSpx4GBU3Zsomhq43) un screenshot de su perfil de Codeacademy con las tres lecciones vistas hoy completadas al 100%. **Tienen hasta las 11:59PM del día anterior a cada sesión para subir su evidencia de preparación**.
 
 ![evidencia](https://github.com/katiearriagam/tech-course/blob/master/images/evidencia01.PNG)
 
+<a name="act1"/>
 ## Actividad 1: [Introducción a Javascript - Learn JavaScript: Introduction](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro?action=lesson_resume&course_redirect=introduction-to-javascript)
 
 1. En el **syllabus** del curso, ir a la sección [Introduction To JavaScript](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro?action=lesson_resume&course_redirect=introduction-to-javascript).
@@ -244,6 +263,7 @@ Hasta ahora has aprendido sobre:
 - Librerías de JavaScript
 - Uso de comentarios
 
+<a name="act2"/>
 ## Actividad 2: [Variables](https://www.codecademy.com/es/courses/learn-javascript-introduction/lessons/variables/exercises/intro-variables?action=lesson_resume&course_redirect=introduction-to-javascript).
 1. Ir a la sección [Variables](https://www.codecademy.com/es/courses/learn-javascript-introduction/lessons/variables/exercises/intro-variables?action=lesson_resume&course_redirect=introduction-to-javascript).
 2. **Asegúrate de que sigues en tu cuenta para que tu progreso se siga registrando**. De lo contrario tendrás que volver a hacer las actividades.
@@ -388,7 +408,7 @@ Has aprendido sobre:
 - Interpolación de variables de tipo string
 - Variables indefinidas
 
-
+<a name="act3"/>
 ## Actividad 3: [Control Flow](https://www.codecademy.com/es/courses/learn-javascript-control-flow/lessons/control-flow/exercises/control-flow-intro?action=lesson_resume&course_redirect=introduction-to-javascript).
 1. Ir a la sección [Control Flow](https://www.codecademy.com/es/courses/learn-javascript-control-flow/lessons/control-flow/exercises/control-flow-intro?action=lesson_resume&course_redirect=introduction-to-javascript).
 2. **Asegúrate de que sigues en tu cuenta para que tu progreso se siga registrando**. De lo contrario tendrás que volver a hacer las actividades.
