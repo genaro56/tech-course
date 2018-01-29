@@ -94,10 +94,10 @@ Para esta sesión, es necesario que suban al [formulario](https://goo.gl/forms/n
 
 Lo que ves en pantalla son 3 espacios con diferentes propósitos cada uno. De izquierda a derecha, son: 
 
-#### Instrucciones
+#### 1. Instrucciones
 Las actividades que deberás completar vienen especificadas en el espacio del lado izquierdo bajo la sección de **Instructions**. Es necesario completar cada actividad para seguir avanzando.
 
-#### Editor de texto
+#### 2. Editor de texto
 El editor de texto es el espacio donde ves código previamente escrito, como:
 
 ```javascript
@@ -107,7 +107,7 @@ console.log('Cheesse');
 
 Aquí es donde escribirás todo el código en las actividades introductorias a Javascript.
 
-#### Consola
+#### 3. Consola
 La consola es la pantalla donde se verán reflejadas las acciones que tu código ejecuta. Para esto, debes dar click en el botón **Run** abajo. 
 
 A continuación presentamos tips para cada nivel de esta sección.
