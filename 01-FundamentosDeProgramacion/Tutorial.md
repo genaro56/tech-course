@@ -136,7 +136,7 @@ Haz click en **Run** para validar tu código y avanzar.
 
 En el **editor de texto** puedes escribir algo como:
 ```javascript
-console.log('Cheesse');
+console.log('Cheese');
 console.log('Harry Potter');
 ```
 Haz click en **Run** para validar tu código. Haz click en **Next** para avanzar a la siguiente sección.
