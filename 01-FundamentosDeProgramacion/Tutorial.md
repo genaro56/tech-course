@@ -55,14 +55,18 @@ Javascript es uno de los lenguajes de programación más conocidos por su amplio
 - Introducción a Javascript
 - Uso de variables
 - Control de flujo (con estatutos condicionales)
-- Ciclos (repetición de código)
 
 ## Preparación
 1. Registrarse en [Codeacademy](https://www.codecademy.com/es/learn) - **Es importante que uses tu cuenta mientras uses Codeacademy ya que aquí se guarda tu progreso**.
 2. Verificar (si es necesario) tu cuenta e ingresar a [Codeacademy](https://www.codecademy.com/es/learn) con ella.
 3. Ingresar al curso [Introduction To JavaScript](https://www.codecademy.com/learn/introduction-to-javascript) de Codeacademy.
 
-## Actividad 1: Introducción a Javascript (Learn JavaScript: Introduction)
+## Tutores: Evidencia de preparación de la sesión
+Para esta sesión, es necesario que suban al [formulario](https://goo.gl/forms/nSpx4GBU3Zsomhq43) un screenshot de su perfil de Codeacademy con las tres lecciones vistas hoy completadas al 100%. **Tienen hasta las 11:59PM del día anterior a cada sesión para subir su evidencia de preparación**.
+
+![evidencia](https://github.com/katiearriagam/tech-course/blob/master/images/evidencia01.PNG)
+
+## Actividad 1: [Introducción a Javascript - Learn JavaScript: Introduction](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro?action=lesson_resume&course_redirect=introduction-to-javascript)
 
 1. En el **syllabus** del curso, ir a la sección [Introduction To JavaScript](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro?action=lesson_resume&course_redirect=introduction-to-javascript).
 2. Dar click en siguiente (**Next**) abajo. Verás una pantalla similar a ésta:
@@ -240,7 +244,7 @@ Hasta ahora has aprendido sobre:
 - Librerías de JavaScript
 - Uso de comentarios
 
-## Actividad 2: Variables
+## Actividad 2: [Variables](https://www.codecademy.com/es/courses/learn-javascript-introduction/lessons/variables/exercises/intro-variables?action=lesson_resume&course_redirect=introduction-to-javascript).
 1. Ir a la sección [Variables](https://www.codecademy.com/es/courses/learn-javascript-introduction/lessons/variables/exercises/intro-variables?action=lesson_resume&course_redirect=introduction-to-javascript).
 2. **Asegúrate de que sigues en tu cuenta para que tu progreso se siga registrando**. De lo contrario tendrás que volver a hacer las actividades.
 
@@ -385,7 +389,7 @@ Has aprendido sobre:
 - Variables indefinidas
 
 
-## Actividad 3: Control de flujo
+## Actividad 3: [Control Flow](https://www.codecademy.com/es/courses/learn-javascript-control-flow/lessons/control-flow/exercises/control-flow-intro?action=lesson_resume&course_redirect=introduction-to-javascript).
 1. Ir a la sección [Control Flow](https://www.codecademy.com/es/courses/learn-javascript-control-flow/lessons/control-flow/exercises/control-flow-intro?action=lesson_resume&course_redirect=introduction-to-javascript).
 2. **Asegúrate de que sigues en tu cuenta para que tu progreso se siga registrando**. De lo contrario tendrás que volver a hacer las actividades.
 
@@ -483,7 +487,7 @@ Este ejemplo comprueba si la variable **food** tiene el string **'apple'**. Como
 An apple a day, keeps the doctor away.
 ```
 
-#### Control de flujo (7/11) - else if
+#### Control de flujo (7/11) - Else if
 Un estatuto condicional **if-else** tiene solamente dos flujos de ejecución. Si queremos agregar más posibilidades de flujo, se agregan los **else if**. Éstos se evalúan en el orden en que se escriben.
 
 ```javascript
@@ -511,4 +515,109 @@ En este caso, no se cumplen las primeras dos condiciones, pero sí la tercera. P
 It is fall!
 ```
 
-#### Control de flujo (8/11) - operadores lógicos
+#### Control de flujo (8/11) - Operadores lógicos
+Los operadores lógicos más usados en JavaScript son el AND (**&&**) y el OR (**||**). Estos se usan para evaluar 2+ condiciones y determinar un valor booleano final.
+
+- **AND (&&)**
+Todas las condiciones tienen que ser verdaderas para que el resultado sea verdadero.
+
+|CondicionA|CondicionB|CondicionA && CondicionB|
+|:-------------:|:-------------:|:-----:|
+|true |true|true|
+|true|false|false|
+|false|true|false|
+|false|false|false|
+
+- **OR (||)**
+Al menos una condición tiene que ser verdadra para que el resultado sea verdadero.
+|CondicionA|CondicionB|CondicionA || CondicionB|
+|:-------------:|:-------------:|:-----:|
+|true |true|true|
+|true|false|true|
+|false|true|true|
+|false|false|false|
+
+#### Control de flujo (9/11) - Switch
+
+JavaScript cuenta con un estatuto llamado **switch** que funciona similar al **if-else if-else**. Usa una variable para revisar su valor y actuar según el mismo. Por lo tanto, permite tener varios flujos dependientes de una misma variable. el siguiente ejemplo lo ilustra mejor:
+
+```javascript
+let food = 'dairy';
+
+switch(food)
+{
+  case 'fruit':
+    console.log('Examples of fruit: apple, orange, grape.');
+    break;
+  case 'vegetable':
+    console.log('Examples of vegetable: carrot, lettuce, spinach.');
+    break;
+  case 'dairy':
+    console.log('Examples of dairy: milk, yogurt.');
+    break;
+  default:
+    console.log('Other items.');
+    break;
+}
+```
+
+El programa usa la variable **food** como la condición dentro de su switch. Como ésta es igual a **dairy**, se ejecuta el código dentro de ese **case**. 
+
+```
+Examples of dairy: milk, yogurt.
+```
+
+Es necesario poner un **break** al final de cada **case** para evitar que el programa continue ejecutando el resto de los cases.
+
+El case **default** se ejecuta cuando ninguno de los cases anteriores se cumplió.
+
+#### Control de flujo (10/11) - Operador ternario
+El operador ternario, como su nombre lo dice, consta de tres partes:
+
+1. La condición que se revisa.
+2. La acción que se ejecuta si la condición se cumple.
+3. La acción que se ejecuta si la condición **no** se cumple.
+
+Podemos ver un ejemplo de un **if-else**:
+
+```javascript
+
+let isCorrect = true;
+
+// La condición que se revisa.
+if(isCorrect)
+{
+  // La acción que se ejecuta si la condición se cumple.
+  console.log('Correct!');
+}
+else
+{
+  // La acción que se ejecuta si la condición no se cumple.
+  console.log('Incorrect!');
+}
+```
+
+Y el mismo programa escrito con un operador ternario:
+
+```javascript
+let isCorrect = true;
+
+isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+```
+
+Se puede apreciar cómo el operador ternario es considerablemente más legible.
+
+#### Control de flujo (11/11) - Repaso
+Has aprendido sobre:
+- Uso de operadores lógicos
+- Uso de operadores de comparación
+- Uso del estatuto condicional if-else if-else
+- Uso del estatuto condicional switch
+- Uso de operadores ternarios
+
+## Conclusión
+Has concluido exitosamente la primera lección de fundamentos de programación. ¡Felicidades! :)
+Más adelante aprenderemos sobre el uso de ciclos y funciones y estaremos listos para empezar a desarrollar nuestras aplicaciones.
+
+## Recursos adicionales
+- Puedes seguir aprendiendo en [Codeacademy](https://www.codecademy.com/learn/introduction-to-javascript) - recuerda ingresar con tu cuenta para guardar tu progreso.
