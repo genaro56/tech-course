@@ -268,3 +268,179 @@ const latitude = 40.7;
 ```
 
 Las variables existen en la memoria del programa, por lo que su valor no se ve reflejado en consola sino hasta que se imprimen con console.log();
+
+#### Variables (2/8) - Declaración de variables con const
+Sigue las instrucciones según lo que pide la actividad. Recuerda hacer click en **Run** después de cada paso, y en **Next** para avanzar a la siguiente actividad.
+
+#### Variables (3/8) - Declaración de variables con let
+
+```javascript
+let changeMe = true;
+changeMe = false;
+```
+
+Sigue las instrucciones según lo que pide la actividad. Recuerda hacer click en **Run** después de cada paso, y en **Next** para avanzar a la siguiente actividad.
+
+#### Variables (4/8) - Declaración de variables indefinidas
+JavaScript tiene un quinto tipo de dato (como string, número, boolean, null) llamado *undefined*. Donde almacena variables cuyo valor no ha sido asignado (y por lo tanto no se puede determinar su tipo de dato). Esto sucede cuando no se inicializa la variable con ningun valor.
+
+```javascript
+let myVar;
+```
+
+Sigue las instrucciones según lo que pide la actividad. Recuerda hacer click en **Run** después de cada paso, y en **Next** para avanzar a la siguiente actividad.
+
+#### Variables (5/8) - Operadores matemáticos
+Las variables almacenan valores que podemos modificar con operadores matemáticos.
+
+```javascript
+// myVar almacena un 3
+let myVar = 3;
+// la operacion se puede traducir a 5 + 3
+// myVar ahora tiene un valor de 8
+myVar = 5 + myVar;
+console.log(myVar);
+```
+
+```
+8
+```
+
+También hay operadores que se encargan de modificar y asignar el valor de una variable al mismo tiempo. Ejemplo:
+```javascript
+// declaramos e inicializamos variables
+let myVar1 = 10;
+let myVar2 = 20;
+let myVar3 = 30;
+let myVar4 = 40;
+let myVar5 = 50;
+let myVar6 = 60;
+
+// sumarle 5 al valor de myVar1 - ahora tendrá valor de 15
+myVar1 += 5;
+
+// restarle 3 al valor de myVar2 - ahora tendrá valor de 17
+myVar2 -= 3;
+
+// multiplicar el valor de myVar3 por 4 - ahora tendrá valor de 120
+myVar3 *= 4;
+
+// dividir el valor de myVar4 entre 10 - ahora tendrá valor de 4
+myVar4 /= 10;
+
+// sumarle 1 al valor de myVar5 - ahora tendrá valor de 51
+myVar5++;
+
+// sumarle 1 al valor de myVar6 - ahora tendrá valor de 59
+myVar6--;
+
+// imprimimos variables
+console.log(myVar1);
+console.log(myVar2);
+console.log(myVar3);
+console.log(myVar4);
+console.log(myVar5);
+console.log(myVar6);
+```
+```
+15
+17
+120
+4
+51
+59
+```
+
+#### Variables (6/8) - Interpolación de strings
+Es posible concatenar strings en JavaScript con el operador **+** de suma.
+
+```javascript
+let favoriteAnimal = 'dog';
+console.log('My favorite animal:' + favoriteAnimal);
+```
+
+```
+My favorite animal:dog
+```
+
+
+#### Variables (7/8) - Interpolación de strings II
+Es posible intercalar strings en JavaScript con **${}**. **Nótese que se usan comillas diferentes en el console.log()**.
+
+```javascript
+let myName = 'Julia';
+console.log(`My name is: ${myName}.`);
+```
+
+```
+Julia
+```
+
+#### Variables (8/8) - Repaso
+Has aprendido sobre:
+- Declaración de variables
+- Uso de variables
+- Manipulación aritmética de variables
+- Interpolación de variables de tipo string
+- Variables indefinidas
+
+
+## Actividad 3: Control de flujo
+1. Ir a la sección [Control Flow](https://www.codecademy.com/es/courses/learn-javascript-control-flow/lessons/control-flow/exercises/control-flow-intro?action=lesson_resume&course_redirect=introduction-to-javascript).
+2. **Asegúrate de que sigues en tu cuenta para que tu progreso se siga registrando**. De lo contrario tendrás que volver a hacer las actividades.
+
+#### Control de flujo (1/11) - Control de flujo
+Un programa en JavaScript puede tener varios flujos para ejecutar, y puede decidir cuál ejecutar de acuerdo a una serie de condiciones.
+
+En el siguiente ejemplo, tenemos una variable booleana *myBool* cuyo valor está inicializado como *true* (verdadero). Al llegar a la línea con el **if**, se evalúa la condición entre los paréntesis. Si ésta se cumple, ejecuta lo que está entre los primeros **{}**. Si no, ejecutará lo que se encuentre dentro del segundo par de **{}**.
+
+```javascript
+let myBool = true;
+if(myBool){
+  console.log("Red");
+}
+else{
+  console.log("Blue");
+}
+```
+
+En este caso, se imprime "Red", pues la condición dentro del **if** es verdadera. Si **myBool** hubiera sido inicialmente **false**, hubieramos visto en consola "Blue".
+```
+Red
+```
+#### Control de flujo (2/11) - if/else
+
+Sigue las instrucciones según lo que pide la actividad. Recuerda hacer click en **Run** después de cada paso, y en **Next** para avanzar a la siguiente actividad.
+
+#### Control de flujo (3/11) - Valores falsos y verdaderos
+
+Así como explícitamente **false** es un valor falso, hay otros valores en JavaScript que se consideran como falsos:
+
+- false
+- 0 y -0 (para valores numéricos)
+- "" and '' (strings vacíos)
+- null (nulos)
+- undefined (indefinidos)
+- NaN (Not a Number)
+
+Sigue las instrucciones según lo que pide la actividad. Recuerda hacer click en **Run** después de cada paso, y en **Next** para avanzar a la siguiente actividad.
+
+#### Control de flujo (4/11) - Valores falsos y verdaderos II
+
+En JavaScript, se puede obtener el valor opuesto a un booleano o una condición si se le antepone un operador **!**.
+
+
+```javascript
+let myBool = true;
+if(!myBool){
+  console.log("Red");
+}
+else{
+  console.log("Blue");
+}
+```
+
+En este caso, se imprime "Blue", pues la condición verdadera dentro del if, se ha negado con el operador **!**.
+```
+Blue
+```
