@@ -62,7 +62,7 @@ Javascript es uno de los lenguajes de programación más conocidos por su amplio
 2. Verificar (si es necesario) tu cuenta e ingresar a [Codeacademy](https://www.codecademy.com/es/learn) con ella.
 3. Ingresar al curso [Introduction To JavaScript](https://www.codecademy.com/learn/introduction-to-javascript) de Codeacademy.
 
-## Introducción a Javascript (Learn JavaScript: Introduction)
+## Actividad 1: Introducción a Javascript (Learn JavaScript: Introduction)
 
 1. En el **syllabus** del curso, ir a la sección [Introduction To JavaScript](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro?action=lesson_resume&course_redirect=introduction-to-javascript).
 2. Dar click en siguiente (**Next**) abajo. Verás una pantalla similar a ésta:
@@ -155,7 +155,7 @@ Los tipos de dato en JavaScript tienen propiedades. Así como nosotros podemos s
 
 Sigue las instrucciones imprimiendo en consola lo que pide la actividad. Recuerda hacer click en **Run** después de cada paso, y en **Next** para avanzar a la siguiente actividad.
 
-#### Learn JavaScript: Introduction (5/9) - Métodos predefinidos
+#### Learn JavaScript: Introduction (6/9) - Métodos predefinidos
 Ya vimos que los tipos de datos tienen propiedades. Es importante saber que también tienen lo que llamamos **métodos** o **funciones**. Por ejemplo, los strings tienen un método **toUpperCase()**, el cual escribe el string completamente en mayúsculas.
 
 La siguiente línea, imprimiría en la consola el texto "HELLO WORLD".
@@ -167,4 +167,104 @@ console.log('Hello World'.toUpperCase());
 HELLO WORLD
 ```
 
-Notarás que los métodos tienen paréntesis a la derecha, a diferencia de las propiedades. **La diferencia entre un método y una propiedad, es que la propiedad es algo que el valor tiene (longitud), mientras que el método es algo que el valor puede hacer (transformar a mayúsculas)**.
+Notarás que los métodos tienen **paréntesis** a la derecha, a diferencia de las propiedades. **La diferencia entre un método y una propiedad, es que la propiedad es algo que el valor tiene (longitud), mientras que el método es algo que el valor puede hacer (transformar a mayúsculas)**.
+
+Para la segunda actividad de esta sección, considera que los strings de JavaScript tienen un método **trim()**. Éste, como su nombre lo dice, recorta los espacios en blanco al inicio y final del string.
+
+Sigue las instrucciones imprimiendo en consola lo que pide la actividad. Recuerda hacer click en **Run** después de cada paso, y en **Next** para avanzar a la siguiente actividad.
+
+
+#### Learn JavaScript: Introduction (7/9) - Librerías
+Javascript cuenta con **librerías** que son como un conjunto de instrucciones predefinidas para facilitar algunas actividades a quien desarrolla el programa. 
+
+Por ejemplo, la librería **Math** contiene funciones matemáticas predefinidas para manipulación de **números**. El ejemplo que presenta usa el método **random()**. El cual genera un número aleatorio entre 0 y 1.
+
+```javascript
+Math.random();
+```
+
+Algunas funciones predefinidas de la **librería Math** son:
+- random: genera un número aleatorio entre 0 y 1.
+- floor: dado un número, obtiene el valor entero redondeado hacia abajo más cercano.
+```javascript
+console.log(Math.floor(17.5));
+```
+```javascript
+17
+```
+- ceil: dado un número, obtiene el valor entero redondeado hacia arriba más cercano.
+
+
+Javascript también cuenta con la **librería Number**, que tiene más funciones de manipulación numérica. Esta librería tiene otras funciones como **isInteger**, que identifica si un número dado es entero o no: 
+```javascript
+console.log(Number.isInteger(17));
+console.log(Number.isInteger(17.5));
+```
+
+```javascript
+true
+false
+```
+
+#### Learn JavaScript: Introduction (8/9) - Comentarios
+Los programas pueden contener comentarios para hacerlos más legibles y ordenados. Esto es necesario cuando construimos código muy grande o cuando queremos ignorar algunas partes de nuestro código al correrlo.
+
+Al correr (**Run**) un programa, éste ignorará los comentarios. En Javascript, hay dos formas de escribir comentarios.
+
+- Una sola línea
+```javascript
+// Este es un comentario de una sola línea
+console.log(Number.isInteger(17));
+console.log(Number.isInteger(17.5));
+```
+
+- Múltiples líneas
+```javascript
+console.log(Number.isInteger(17));
+console.log(Number.isInteger(17.5));
+/*
+Este es un comentario de muchas líneas.
+Todo lo que esté dentro del comentario será ignorado.
+console.log(Number.isInteger(17));
+console.log(Number.isInteger(17.5));
+console.log(Number.isInteger(17));
+*/
+console.log(Number.isInteger(17.5));
+```
+
+#### Learn JavaScript: Introduction (9/9) - Repaso
+Hasta ahora has aprendido sobre:
+- Tipos de datos (y sus propiedades y métodos)
+- Impresión en pantalla
+- Operaciones matemáticas
+- Librerías de JavaScript
+- Uso de comentarios
+
+## Actividad 2: Variables
+1. Ir a la sección [Variables](https://www.codecademy.com/es/courses/learn-javascript-introduction/lessons/variables/exercises/intro-variables?action=lesson_resume&course_redirect=introduction-to-javascript).
+2. **Asegúrate de que sigues en tu cuenta para que tu progreso se siga registrando**. De lo contrario tendrás que volver a hacer las actividades.
+
+#### Variables (1/8) - Variables
+Las variables son como pequeños contenedores en la memoria del programa que sirven para almacenar y reusar valores. Puedes declarar variables de cualquier tipo de dato en JavaScript (strings, números, booleanos...).
+
+Hay dos formas de declarar variables:
+
+**let**
+```javascript
+// La variable latitude contendrá el valor 40.7
+// El valor de latitude puede modificarse en cualquier momento
+let latitude = 40.7;
+latitude = 12;
+```
+
+**const**
+```javascript
+/*
+La variable latitude contendrá el valor 40.7
+El valor de latitude NO puede modificarse, ya que
+se ha declarado como constante (const)
+*/
+const latitude = 40.7;
+```
+
+Las variables existen en la memoria del programa, por lo que su valor no se ve reflejado en consola sino hasta que se imprimen con console.log();
