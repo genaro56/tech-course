@@ -13,7 +13,7 @@
 - [Actividad 3: Control Flow](#act3) 
 
 <a name="objectives"/></a>
-### Objetivos y alcance
+## Objetivos y alcance
 Esta sesión cubre una corta introducción sobre la programación como una herramienta poderosa e importante en la actualidad. También comenzarán las sesiones prácticas con ayuda de tutoriales guiados por CodeAcademy. 
 Se cubrirán algunos fundamentos de programación con actividades prácticas en el lenguaje JavaScript.
 
@@ -56,7 +56,7 @@ AutoCAD es una herramienta de diseño computarizado que permite al usuario model
 ![AutoCAD](https://github.com/katiearriagam/tech-course/blob/master/images/autocad.png)
 
 <a name="why"/></a>
-### ¿Por qué aprender a programar?
+## ¿Por qué aprender a programar?
 Entre las muchas razones que podríamos enlistar para aprender a programar, aquí hay algunas:
 - Ventaja competitiva en casi cualquier industria (ver ejemplos anteriores).
 - Es una herramienta poderosa para materializar ideas desde cero.
