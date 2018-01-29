@@ -101,8 +101,8 @@ Las actividades que deberás completar vienen especificadas en el espacio del la
 El editor de texto es el espacio donde ves código previamente escrito, como:
 
 ```javascript
-console.log('Cheesse');
-console.log('Cheesse');
+console.log('Cheese');
+console.log('Cheese');
 ```
 
 Aquí es donde escribirás todo el código en las actividades introductorias a Javascript.
@@ -126,7 +126,7 @@ Por ejemplo:
 
 En el **editor de texto** puedes escribir algo como:
 ```javascript
-console.log('Cheesse');
+console.log('Cheese');
 ```
 Haz click en **Run** para validar tu código y avanzar.
 
