@@ -550,7 +550,8 @@ Todas las condiciones tienen que ser verdaderas para que el resultado sea verdad
 
 - **OR (||)**
 Al menos una condición tiene que ser verdadra para que el resultado sea verdadero.
-|CondicionA|CondicionB|CondicionA || CondicionB|
+
+|CondicionA|CondicionB|CondicionA OR CondicionB|
 |:-------------:|:-------------:|:-----:|
 |true |true|true|
 |true|false|true|
