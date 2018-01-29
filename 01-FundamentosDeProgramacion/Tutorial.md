@@ -444,3 +444,71 @@ En este caso, se imprime "Blue", pues la condición verdadera dentro del if, se 
 ```
 Blue
 ```
+
+#### Control de flujo (5/11) - Operadores de comparación
+
+Las condiciones además de ser valores únicos, pueden ser operaciones aritméticas o booleanas. Si nos preguntamos, por ejemplo: ¿es 5 menor a 1? La respuesta es falso. Esto en JavaScript se representa de la siguiente manera:
+
+```javascript
+// myBool almacenará un valor de false
+let myBool = 5 < 1;
+```
+
+Así podemos representar otras comparaciones:
+- Menor que (<).
+- Mayor que (>).
+- Menor o igual que (<=).
+- Mayor o igual que (>=).
+
+Todas estas se evalúan y concluyen un falso o verdadero.
+
+#### Control de flujo (6/11) - Operadores de comparación II
+
+También existe otro operador de comparación que evalúa si dos valores son exactamente iguales. Éste es el operador **===**. Se usa de la siguiente manera:
+
+```javascript
+let food = 'apple';
+
+if(food === 'apple')
+{
+  console.log('An apple a day, keeps the doctor away.');
+}
+else{
+  console.log('You should eat more apples!');
+}
+```
+
+Este ejemplo comprueba si la variable **food** tiene el string **'apple'**. Como sí son iguales, imprime el primer string.
+```
+An apple a day, keeps the doctor away.
+```
+
+#### Control de flujo (7/11) - else if
+Un estatuto condicional **if-else** tiene solamente dos flujos de ejecución. Si queremos agregar más posibilidades de flujo, se agregan los **else if**. Éstos se evalúan en el orden en que se escriben.
+
+```javascript
+let season = 'fall';
+
+if(season === 'spring')
+{
+  console.log('It is spring!');
+}
+else if(season === 'summer')
+{
+  console.log('It is summer!');
+}
+else if(season === 'fall')
+{
+  // esta es la condición que se cumple en el ejemplo
+  console.log('It is fall!');
+}
+else{
+  console.log('It is winter');
+}
+```
+En este caso, no se cumplen las primeras dos condiciones, pero sí la tercera. Por lo que se imprime lo que viene en esa condición.
+```
+It is fall!
+```
+
+#### Control de flujo (8/11) - operadores lógicos
