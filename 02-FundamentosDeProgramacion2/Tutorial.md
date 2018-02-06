@@ -17,9 +17,9 @@ Instrucciones:
 
 Las funciones son fragmentos de código que se usan para separar código que queremos que ejecure varias veces en puntos diferentes de nuestro programa. Sirven para *modularizar* nuestro código y crear partes reusables, en lugar de poner el mismo fragmento a lo largo del programa.
 
-### Introducción a funciones (1/10)
+### Funciones: Introducción a funciones (1/10)
 
-Esta sección solamente te pide comprender el código que ves en pantalla. Aquí puedes ver el código comentado con lo que hace cada parte
+Esta sección solamente te pide comprender el código que ves en pantalla. Aquí puedes ver el código comentado con lo que hace cada parte.
 
 ```javascript
 /*
@@ -58,3 +58,48 @@ pressPowerButton();
 pressPowerButton();
 // Output: Calculator turning off.
 ```
+
+### Funciones: Funciones (2/10)
+
+#### Parte 1
+
+Deberás crear una función con las siguientes partes:
+
+- Palabra **const** al inicio.
+- Nombre de la función
+- Asignación de la función con **= () =>**
+- El cuerpo de la función (lo que hace) encerrado por dos **{}**. 
+
+Aquí hay un ejemplo:
+
+```javascript
+/*
+const myNewFunction = () =>
+{
+  console.log('This is a function');
+}
+```
+
+#### Parte 2
+
+Notarás que la función no imprime nada en la consola todavía. Esto es porque hay que llamarla desde algún lado del código. Hasta este punto solamente existe.
+
+Para llamarla, es necesario escribir el nombre de la función en algún punto debajo de su declaración. 
+
+```javascript
+
+const myNewFunction = () =>
+{
+  console.log('This is a function');
+}
+
+// llamada a la función
+myNewFunction();
+```
+
+Salida:
+```
+This is a function
+```
+
+### Funciones: Parámetros (3/10)
