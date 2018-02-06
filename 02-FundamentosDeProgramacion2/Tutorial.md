@@ -17,20 +17,36 @@ Instrucciones:
 
 Las funciones son fragmentos de código que se usan para separar código que queremos que ejecure varias veces en puntos diferentes de nuestro programa. Sirven para *modularizar* nuestro código y crear partes reusables, en lugar de poner el mismo fragmento a lo largo del programa.
 
-### Intruducción a funciones (1/10)
+### Introducción a funciones (1/10)
 
 Esta sección solamente te pide comprender el código que ves en pantalla. Aquí puedes ver el código comentado con lo que hace cada parte
 
 ```javascript
-// tenemos una variable booleana inicializada en falso
+/*
+
+calculatorIsOn = representa el estado de la calculadora (encendida/apagada) 
+  apagada = false
+  encendida = true
+
+*/
+
 let calculatorIsOn = false;
 
-// declaramos una función 
+// declaramos una función que representa el botón de encendido
 const pressPowerButton = () => {
+  /*
+    si la calculadora está encencida, imprimimos un mensaje
+    de que estamos apagando la calculadora, y calculatorIsOn cambia a falso (apagada)
+  */
   if (calculatorIsOn) {
     console.log('Calculator turning off.');
     calculatorIsOn = false;
-  } else {
+  }
+  else {
+    /*
+      si la calculadora está apagada, imprimimos un mensaje
+      de que estamos encendiendo la calculadora, y calculatorIsOn cambia a true (encendida)
+    */
     console.log('Calculator turning on.');
     calculatorIsOn = true;
   }
