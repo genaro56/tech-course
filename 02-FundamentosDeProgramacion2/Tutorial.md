@@ -73,7 +73,6 @@ Deberás crear una función con las siguientes partes:
 Aquí hay un ejemplo:
 
 ```javascript
-/*
 const myNewFunction = () =>
 {
   console.log('This is a function');
@@ -188,3 +187,52 @@ Nos piden agregar una impresión a consola (**console.log()**), donde entre los 
 En esta parte se nos pide crear más funciones con valores de retorno en nuestro código como práctica.
 
 ### Funciones: Declaración de funciones (7/10)
+
+Aquí nos muestran una forma diferente de crear funciones. Ésta forma de declarar funciones es la más comúnmente usada, por lo que es ampliamente recomendado conocerla. 
+
+**Ejemplo de sintaxis**
+
+```javascript
+function nombreDeLaFuncion(parametro1, parametro2)
+{
+  /*
+    cuerpo de la función aquí
+  */
+}
+
+nombreDeLaFuncion(1,5);
+```
+
+En la actividad nos piden crear una función **isGreaterThan** que reciba **2 parámetros** y compare sus valores para **retornar** si el valor del primero es más grante que el segundo.
+
+### Funciones: Expresiones (8/10)
+
+En esta actividad nos piden cambiar el código de función de la actividad anterior a la notación que se muestra en el siguiente ejemplo.
+
+```javascript
+const nombreDeLaFuncion = (parametro1, parametro2) =>
+{
+  /*
+    cuerpo de la función aquí
+  */
+}
+
+nombreDeLaFuncion(1,5);
+```
+
+
+### Funciones: Funciones con flechas (9/10)
+
+La siguiente actividad nos explica cómo cambiar de una notación de **expresiones** a una notación de **funciones con flechas**. Esto es efectivo **únicamente** cuando la función tiene una instrucción de **una sola línea**.
+
+**Notación de expresiones**
+```javascript
+const nombreDeLaFuncion = (parametro) => {
+  return parametro * parametro;
+};
+```
+
+**Notación de flecha**
+```javascript
+const nombreDeLaFuncion = parametro => parametro * parametro;
+```
