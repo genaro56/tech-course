@@ -304,3 +304,74 @@ console.log(lightWaves);
 
 ### Alcance: Alcance local II (5/7)
 
+1. Quitamos el último **console.log()** que causó el error.
+2. Agregar una variable **let** nueva: **region = 'The Arctic'**.
+3. Agregar un bloque **if** que verifique si la variable **region** es igual a **'The Arctic'**.
+```javascript
+if(region === 'The Arctic'){}
+```
+4. Dentro del bloque **if**, declarar una variable **let** llamada **lightWaves = 'Northern Lights'**.
+5. Si imprimimos el valor de **lightWaves** dentro del bloque **if** y justo después de éste, notaremos que imprimen diferentes valores. Esto es porque la re-declaración de la variable **lightWaves** es local para el bloque **if** y no afecta fuera de éste.
+
+### Alcance: Alcance local III (6/7)
+
+Los **pasos 1-3**, nos piden un código similar al siguiente: 
+
+```javascript
+// declaración de la función
+const starCount = () => {
+  // declaración de la variable i
+  let i = 5;
+  // mostrar la variable i en consola
+  console.log(i);
+  
+  /*
+    Aquí va el código del paso 4
+  */
+}
+```
+
+El **paso 4** nos pide declarar un **ciclo FOR**. Un ciclo permite ejecutar una misma sección de código un determinado número de veces.
+Como esto no se ha cubierto a profundidad, aquí se explican brevemente las partes de un FOR:
+```javascript
+for(let i = 0; i < 12; i++)
+{
+  // mostrar la variable i en consola
+  console.log(i);
+}
+```
+
+Dentro del paréntesis, vemos tres partes:
+- **let i = 0**: La variable **i** será el **iterador**, ésta se inicializa en 0 en este ejemplo.
+- **i < 12**: El ciclo se ejecutará **(hará otra iteración)** todas las veces que la variable **i** sea **menor a 12**.
+- **i++**: Al finalizar cada iteración, **incrementa** el valor de **i** en 1.
+
+Dadas estas condiciones, podemos observar que el ciclo se ejecutará **12 veces (hará 12 iteraciones)**. En ellas, los valores de **i** serán **0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11** respectivamente. 
+
+Estos son los valores que imprime el **console.log(i)** dentro del **for**, independientemente de que haya sido declarada e inicializada en 5 en otros puntos. Esto es gracias al alcance local.
+
+Finalmente, los **pasos 5-6**, nos piden llamar la función **starCount()** desde afuera de la función, y tratar de hacer **console.log(i)**. Al terminar esto, tendremos un código como éste:
+
+```javascript
+// declaración de la función
+const starCount = () => {
+  // declaración de la variable i
+  let i = 5;
+  // mostrar la variable i en consola
+  console.log(i);
+  
+  // ciclo for
+  for(let i = 0; i < 12; i++)
+  {
+    console.log(i);
+  }
+  
+}
+
+starCount();
+
+// mostrar la variable i en consola
+console.log(i);
+```
+
+**Nota:** Esperaríamos que la última línea de código nos genere un **ERROR**, ya que la variable **i** no existe fuera del contexto de la función **starCount()**.
