@@ -450,10 +450,84 @@ console.log(newYearsResolutions[3]);
 
 ### Arreglos: Modificando elementos del arreglo (4/9)
 
-1. Nos piden actualizar el **segundo elemento** del arreglo con el string **'Learn a new language'**.
+1. Nos piden actualizar el **segundo elemento** del arreglo **newYearsResolutions** con el string **'Learn a new language'**.
 
 Podemos actualizar elementos individuales del arreglo como lo haríamos con una variable.
 ```javascript
 // esto modifica el TERCER elemento del arreglo
 newYearsResolutions[2] = 'a new resolution'.
 ```
+
+### Arreglos: Longitud del arreglo (5/9)
+
+¿Recuerdas la propiedad **length** de los strings que recupera su longitud? Los arreglos también tienen una propiedad **length** que nos da el número de elementos que tiene el arreglo, y se usa de la misma manera.
+
+```javascript
+listaDeCompras.length
+```
+
+1. En esta actividad, nos piden hacer **console.log()** de la longitud de arreglo **newYearsResolutions**.
+
+
+### Arreglos: Métodos PUSH y POP (6/9)
+
+Así como podemos acceder a propiedades de un arreglo como **length**, podemos usar métodos que nos ayuden a manipular esta estructura. Entre los más comunes, se encuentran los métodos **push** y **pop**.
+
+#### .push(parametro)
+
+El método push nos permite insertar un elemento al final del arreglo. **Es importante pasar como parámetro el elemento que quiere ingresarse a la lista.** Se usa de la siguiente manera:
+
+```javascript
+listaDeCompras.push('Queso');
+```
+
+Si hacemos esto, el arreglo **listaDeCompras**, tendría ahora 4 elementos: **['Leche', 'Cereal', 'Jugo', 'Queso']**.
+
+#### .pop()
+
+El método pop nos permite quitar el último elemento al final del arreglo. Se usa de la siguiente manera:
+
+```javascript
+listaDeCompras.pop();
+```
+
+Si incialmente **listaDeCompras** tiene 4 elementos **['Leche', 'Cereal', 'Jugo', 'Queso']** (por el **push** que hicimos anteriormente), y hacemos un **pop**, el arreglo **listaDeCompras**, tendría ahora 3 elementos nuevamente: **['Leche', 'Cereal', 'Jugo']**.
+
+1. Nos piden usar **push()** para agregar 2 elementos al arreglo **newYearsResolutions**.
+2. Hacemos **console.log()** de todo el arreglo.
+3. Usamos **pop()** para quitar el último elemento del arreglo **newYearsResolutions**.
+4. Hacemos **console.log()** de todo el arreglo nuevamente.
+
+### Arreglos: Más métodos de arreglos (7/9)
+
+#### .shift()
+Borra el primer elemento de la lista.
+
+**Parámetros:** N/A
+
+
+#### .unshift(elemento)
+Agrega a la lista un elemento al principio.
+
+**Parámetros:** 
+- elemento: es el elemento a agregar al principio de la lista
+
+#### .slice(indiceInicial, indiceFinal)
+Obtiene una sub-lista dados dos índices.
+
+**Parámetros:**
+- indiceInicial: el índice a partir del cual se obtienen los elementos (inclusivo).
+- indiceFinal: el índice hasta el cual se obtienen los elementos (no-inclusivo).
+
+1. Usar **.shift()** para quitar el primer elemento del arreglo **groceryList**. Hacer **console.log()** al arreglo.
+2. Usar **.shift('popcorn')** para agregar el elemento **popcorn** al inicio del arreglo **groceryList**. Hacer **console.log()** al arreglo.
+3. Usar **.slice(indiceInicial, indiceFinal)** para obtener del arreglo los siguientes elementos: **'bananas', 'coffee beans', 'brown rice'**. Meter todo esto en un **console.log()**.
+4. Usar **console.log()** para imprimir los elementos de la lista una vez más.
+
+
+### Arreglos: Arreglos con let y const (8/9)
+
+1. Agregar un condimento al final del arreglo **condiments** con **push()**. Usar **console.log()** para imprimir los elementos de **condiments**.
+2. Reasignar el arreglo **condiments** para que sea un arreglo con un solo elemento. Usar **console.log()** para imprimir los elementos de **condiments**.
+3. Usar **pop()** para quitar el último elemento del arreglo **utensils**. Usar **console.log()** para imprimir los elementos de **utensils**.
+4. Reasignar el arreglo **utensils** para que sea un arreglo con un solo elemento. **Esto generará un ERROR porque utensils es const**.
