@@ -236,3 +236,31 @@ const nombreDeLaFuncion = (parametro) => {
 ```javascript
 const nombreDeLaFuncion = parametro => parametro * parametro;
 ```
+
+<a name="scope"/></a>
+# Actividad 2: [Alcance](https://www.codecademy.com/es/courses/learn-javascript-scope/lessons/scope/exercises/scope?action=lesson_resume&course_redirect=introduction-to-javascript)
+
+Instrucciones:
+- En el **syllabus** del curso, ir a la sección [Scope - Interactive Lesson](https://www.codecademy.com/es/courses/learn-javascript-scope/lessons/scope/exercises/scope?action=lesson_resume&course_redirect=introduction-to-javascript).
+- Sigue las actividades guiadas por Codeacademy con ayuda de las indicaciones de este tutorial.
+
+### ¿Qué es alcance?
+
+Este término se refiere al **alcance de las variables** dentro del código. Si una función está declarada dentro del cuerpo de una función, ésta no puede ser llamada en otra función como si fuera parte de ésta también. Aquí veremos los diferentes tipos de alcance.
+
+### Alcance: Alcance global (1/7)
+
+1. Crear dos variables **const** llamadas **satellite** (inicializada como **'The Moon'**) y **galaxy** (inicializada como **'The Milky Way'**).
+2. Crear una variable **let** llamada **stars** (inicializada como **'North Star'**).
+3. Crear una función que utilice estas tres variables de la siguiente manera:
+
+```javascript
+const myNightSky = () => 
+{
+  return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+}
+```
+
+4. Llamar la función desde un **console.log()**. Notarás que la función puede acceder a las variables sin necesidad de tenerlas como parámetro, o declaradas dentro de sí porque son **variables globales**. 
+
+
