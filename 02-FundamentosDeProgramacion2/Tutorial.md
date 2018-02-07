@@ -375,3 +375,85 @@ console.log(i);
 ```
 
 **Nota:** Esperaríamos que la última línea de código nos genere un **ERROR**, ya que la variable **i** no existe fuera del contexto de la función **starCount()**.
+
+
+<a name="arrays"/></a>
+# Actividad 1: [Arreglos](https://www.codecademy.com/es/courses/learn-javascript-arrays/lessons/arrays/exercises/arrays?action=lesson_resume&course_redirect=introduction-to-javascript)
+
+Instrucciones:
+- En el **syllabus** del curso, ir a la sección [Arrays - Interactive Lesson](https://www.codecademy.com/es/courses/learn-javascript-arrays/lessons/arrays/exercises/arrays?action=lesson_resume&course_redirect=introduction-to-javascript).
+- Sigue las actividades guiadas por Codeacademy con ayuda de las indicaciones de este tutorial.
+
+### ¿Qué son los arreglos?
+
+Así como nosotros usamos **listas**, los lenguajes de programación tienen algo a lo que se les llama **arreglos**. Estos almacenan un conjunto de datos. 
+
+### Arreglos: Introducción a arreglos (1/9)
+
+El curso de Codeacademy nos presenta la sintaxis básica de una lista. Si nosotros tuviéramos, una lista de compras, se vería algo así:
+
+```
+Lista de compras
+
+1. Leche
+2. Cereal
+3. Jugo
+```
+
+La misma lista en JavaScript, se vería de la siguiente manera:
+
+
+```javascript
+let listaDeCompras = ['Leche', 'Cereal', 'Jugo'];
+```
+
+### Arreglos: Creación de arreglos (2/9)
+
+1. Nos piden crear un arreglo llamado **newYearsResolutions** que contenga tres strings. Puedes basarte en el ejemplo anterior.
+2. Nos piden imprimir el arreglo en consola usando **console.log()**.
+
+### Arreglos: Accediendo a elementos del arreglo (3/9)
+
+De nuestro ejemplo anterior, vemos que listaDeCompras tiene 3 elementos. 
+
+```javascript
+let listaDeCompras = ['Leche', 'Cereal', 'Jugo'];
+```
+
+Es posible acceder cada uno de estos individualmente con lo que llamamos **índice**. Cada elemento del arreglo tendrá un índice asignado en el mismo, **empezando desde el 0**. La notación sería la siguiente:
+
+```javascript
+let listaDeCompras = ['Leche', 'Cereal', 'Jugo'];
+
+let primerElemento = listaDeCompras[0];
+let segundoElemento = listaDeCompras[1];
+let tercerElemento = listaDeCompras[2];
+```
+
+**Es importante recalcar que la numeración de los elementos comienza desde el índice 0.** Si, por ejemplo, tratáramos de acceder al elemento:
+
+```javascript
+let listaDeCompras = ['Leche', 'Cereal', 'Jugo'];
+
+let elementoNoExistente = listaDeCompras[3];
+```
+
+Esto nos mostraría un **ERROR** porque **no existe el índice 3 en el arreglo listaDeCompras**. Sólo existen los elementos numerados **0, 1 y 2**.
+
+1. Nos piden recuperar el **primer elemento** del arreglo **newYearsResolutions** y asignárselo a una variable **listItem**. También nos piden hacer **console.log()** a **listItem**.
+2. Nos piden hacer **console.log()** del **tercer elemento** del arreglo **newYearsResolutions** sin asignárselo a ninguna variable.
+3. Nos piden tratan de correr la siguiente línea de código. Notaremos que el resultado dice **undefined (indefinido)** ya que no existe el elemento con índice 3 en el arreglo **newYearsResolutions**.
+
+```javascript
+console.log(newYearsResolutions[3]);
+```
+
+### Arreglos: Modificando elementos del arreglo (4/9)
+
+1. Nos piden actualizar el **segundo elemento** del arreglo con el string **'Learn a new language'**.
+
+Podemos actualizar elementos individuales del arreglo como lo haríamos con una variable.
+```javascript
+// esto modifica el TERCER elemento del arreglo
+newYearsResolutions[2] = 'a new resolution'.
+```
