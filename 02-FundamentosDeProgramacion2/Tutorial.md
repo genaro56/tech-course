@@ -248,7 +248,7 @@ Instrucciones:
 
 Este término se refiere al **alcance de las variables** dentro del código. Si una función está declarada dentro del cuerpo de una función, ésta no puede ser llamada en otra función como si fuera parte de ésta también. Aquí veremos los diferentes tipos de alcance.
 
-### Alcance: Alcance global (1/7)
+### Alcance: Alcance global (2/7)
 
 1. Crear dos variables **const** llamadas **satellite** (inicializada como **'The Moon'**) y **galaxy** (inicializada como **'The Milky Way'**).
 2. Crear una variable **let** llamada **stars** (inicializada como **'North Star'**).
@@ -263,4 +263,44 @@ const myNightSky = () =>
 
 4. Llamar la función desde un **console.log()**. Notarás que la función puede acceder a las variables sin necesidad de tenerlas como parámetro, o declaradas dentro de sí porque son **variables globales**. 
 
+### Alcance: Alcance global II (3/7)
+
+1. Dentro de la función **myNightSky**, reasignar el valor de **stars** a **'Sirius'**. La función puede reasignar el valor de una **variable global** desde adentro de la función.
+
+```javascript
+stars = 'Sirius';
+```
+
+2. Si imprimimos en consola el valor de **stars** después de la llamada a la función **myNightSky**, notaremos que se ha modificado el valora **'Sirius'**. Esto es porque lo que le pasa a una **variable global** en cualquier punto del código, afecta a la variable globalmente.
+
+### Alcance: Alcance local (4/7)
+
+1. Nos piden crear una función llamada **visibleLightWaves** con la siguiente notación:
+
+```javascript
+const nombreDeLaFuncion = () =>
+{
+  /*
+      Cuerpo de la función
+  */
+}
+```
+
+2. Dentro del cuerpo de la función, creamos una variable **let** llamada **lightWaves** e inicializada como **'Moonlight'**.
+3. Dentro del cuerpo de la función, y seguido de la declaración de la variable **lightWaves**, imprimimos ésta con un **console.log()**.
+4. Fuera de la función **visibleLightWaves**, hacemos una llamada a ésta.
+
+```javascript
+visibleLightWaves();
+```
+5. Intentaremos imprimir el valor de la **variable local lightWaves** desde **afuera de la función**. 
+
+```javascript
+visibleLightWaves();
+console.log(lightWaves);
+```
+
+**Nota:** Veremos que ocurre un **ERROR** al tratar de imprimir esto fuera de la función. Esto es porque la variable **lightWaves** es **local** y **solamente existe dentro de la función visibleLightWaves**.
+
+### Alcance: Alcance local II (5/7)
 
