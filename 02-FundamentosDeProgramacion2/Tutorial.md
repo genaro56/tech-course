@@ -7,10 +7,10 @@
 - [Actividad 4: Ciclos](#loops)
 
 <a name="functions"/></a>
-# Actividad 1: [Funciones](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro?action=lesson_resume&course_redirect=introduction-to-javascript)
+# Actividad 1: [Funciones](https://www.codecademy.com/courses/learn-javascript-functions/lessons/functions/exercises/intro-to-functions?action=lesson_resume&course_redirect=introduction-to-javascript)
 
 Instrucciones:
-- En el **syllabus** del curso, ir a la sección [Functions - Interactive Lesson](https://www.codecademy.com/es/courses/learn-javascript-functions/lessons/functions/exercises/intro-to-functions?action=lesson_resume&course_redirect=introduction-to-javascript).
+- En el **syllabus** del curso, ir a la sección [Functions - Interactive Lesson](https://www.codecademy.com/courses/learn-javascript-functions/lessons/functions/exercises/intro-to-functions?action=lesson_resume&course_redirect=introduction-to-javascript).
 - Sigue las actividades guiadas por Codeacademy con ayuda de las indicaciones de este tutorial.
 
 ### ¿Qué son las funciones?
@@ -103,3 +103,88 @@ This is a function
 ```
 
 ### Funciones: Parámetros (3/10)
+
+Las funciones pueden recibir **parámetros**. Estos son valores que generalmente se usan para definir el curso de acción que tomará la función. 
+
+Ejemplo: Podemos hacer que una función siempre imprima el nombre de un color dado, podemos definir el parámetro **color** y establecer que imprima el color que se le pase como parámetro.
+
+```javascript
+const myFavoriteColor = (color) =>
+{
+  console.log('My favorite color is: ' + color);
+}
+
+// 1ra llamada a la función
+myFavoriteColor('blue');
+// 2da llamada
+myFavoriteColor('red');
+```
+
+Salida:
+```
+My favorite color is: blue
+My favorite color is: red
+```
+
+### Funciones: Parámetros II (4/10)
+
+Hasta este punto, en el ejercicio de **Codeacademy** deberíamos tener código similar al siguiente:
+
+```javascript
+const takeOrder = (topping) =>
+{
+  console.log('Order: pizza topped with ' + topping);
+}
+
+takeOrder('mushrooms');
+```
+
+A éste le podemos agregar más parámetros. El código se vería de la siguiente forma:
+
+```javascript
+const nombreDeLaFuncion = (parametro1, parametro2) =>
+{
+  // Cuerpo de lo que hace la función 
+}
+
+nombreDeLaFuncion('éste es un parámetro', 'este es otro parámetro');
+```
+
+### Funciones: Retorno (valores de retorno) (5/10)
+
+Una función puede tener **valores de retorno**. Esto significa que una función puede regresar al punto a donde fue llamada y otorgar un valor, por ejemplo, a una variable.
+
+#### Parte 1
+
+El tutorial nos pide declarar una variable **orderCount** que nos ayude a llevar la cuenta de cuántas órdenes de pizza se han realizado. Es importante que esta sea **modificable** (¿sería *const* o *let*?) e inicializada en 0 (porque inicialmente no se ha realizado ninguna orden.)
+
+#### Parte 2
+
+Ahora debemos hacer que cada vez que se llame la función **takeOrder**, se le sume 1 a la variable order count. Aquí te recordamos cómo sumar y asignar en JavaScript para una misma variable:
+
+```javascript
+// inicializamos myVar con un valor de 5
+let myVar = 5;
+
+// le sumamos 2 a myVar. Ahora vale 7.
+myVar = myVar + 2;
+```
+**Nota:** hay un pequeño error en Codeacademy que marca como error el operador **+=** para este ejercicio. Será necesario hacerlo como el ejemplo anterior.
+
+#### Partes 3 y 4
+
+Aquí nos piden crear una segunda función **getSubTotal** con un parámetro llamado **itemCount**. Se especifíca que dentro del cuerpo de la función, tendremos un estatuto **return** que multiplique **itemCount * 7.5**.
+
+```javascript
+return itemCount * 7.5
+```
+
+#### Parte 5
+
+Nos piden agregar una impresión a consola (**console.log()**), donde entre los **()** incluyamos una llamada a la función **getSubTotal** pasando el contador **orderCount** que creamos en la parte 1 como parámetro. 
+
+### Funciones: Retorno (valores de retorno) II (6/10)
+
+En esta parte se nos pide crear más funciones con valores de retorno en nuestro código como práctica.
+
+### Funciones: Declaración de funciones (7/10)
