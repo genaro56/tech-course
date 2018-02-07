@@ -7,10 +7,10 @@
 - [¿Por qué aprender a programar?](#why) 
 - [JavaScript](#js) 
 - [Preparación](#prep) 
-- [Tutores: Evidencia de preparación de la sesión](#tutores) 
 - [Actividad 1: Introducción a Javascript - Learn JavaScript: Introduction](#act1) 
 - [Actividad 2: Variables](#act2) 
 - [Actividad 3: Control Flow](#act3) 
+- [Tutores: Evidencia de preparación de la sesión](#tutores) 
 
 <a name="objectives"/></a>
 ## Objetivos y alcance
@@ -77,12 +77,6 @@ Javascript es uno de los lenguajes de programación más conocidos por su amplio
 1. Registrarse en [Codeacademy](https://www.codecademy.com/es/learn) - **Es importante que uses tu cuenta mientras uses Codeacademy ya que aquí se guarda tu progreso**.
 2. Verificar (si es necesario) tu cuenta e ingresar a [Codeacademy](https://www.codecademy.com/es/learn) con ella.
 3. Ingresar al curso [Introduction To JavaScript](https://www.codecademy.com/learn/introduction-to-javascript) de Codeacademy.
-
-<a name="tutores"/></a>
-## Tutores: Evidencia de preparación de la sesión
-Para esta sesión, es necesario que suban al [formulario](https://goo.gl/forms/nSpx4GBU3Zsomhq43) un screenshot de su perfil de Codeacademy con las tres lecciones vistas hoy completadas al 100%. **Tienen hasta las 11:59PM del día anterior a cada sesión para subir su evidencia de preparación**.
-
-![evidencia](https://github.com/katiearriagam/tech-course/blob/master/images/evidencia01.PNG)
 
 <a name="act1"/></a>
 ## Actividad 1: [Introducción a Javascript - Learn JavaScript: Introduction](https://www.codecademy.com/courses/learn-javascript-introduction/lessons/introduction-to-javascript/exercises/intro?action=lesson_resume&course_redirect=introduction-to-javascript)
@@ -642,3 +636,9 @@ Más adelante aprenderemos sobre el uso de ciclos y funciones y estaremos listos
 
 ## Recursos adicionales
 - Puedes seguir aprendiendo en [Codeacademy](https://www.codecademy.com/learn/introduction-to-javascript) - recuerda ingresar con tu cuenta para guardar tu progreso.
+
+<a name="tutores"/></a>
+## Tutores: Evidencia de preparación de la sesión
+Para esta sesión, es necesario que suban al [formulario](https://goo.gl/forms/nSpx4GBU3Zsomhq43) un screenshot de su perfil de Codeacademy con las tres lecciones vistas hoy completadas al 100%. **Tienen hasta las 11:59PM del día anterior a cada sesión para subir su evidencia de preparación**.
+
+![evidencia](https://github.com/katiearriagam/tech-course/blob/master/images/evidencia01.PNG)
