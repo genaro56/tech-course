@@ -531,3 +531,101 @@ Obtiene una sub-lista dados dos índices.
 2. Reasignar el arreglo **condiments** para que sea un arreglo con un solo elemento. Usar **console.log()** para imprimir los elementos de **condiments**.
 3. Usar **pop()** para quitar el último elemento del arreglo **utensils**. Usar **console.log()** para imprimir los elementos de **utensils**.
 4. Reasignar el arreglo **utensils** para que sea un arreglo con un solo elemento. **Esto generará un ERROR porque utensils es const**.
+
+
+<a name="loops"/></a>
+# Actividad 4: [Ciclos](https://www.codecademy.com/es/courses/learn-javascript-loops/lessons/loops/exercises/loops?action=lesson_resume&course_redirect=introduction-to-javascript)
+
+Instrucciones:
+- En el **syllabus** del curso, ir a la sección [Loops - Interactive Lesson](https://www.codecademy.com/es/courses/learn-javascript-loops/lessons/loops/exercises/loops?action=lesson_resume&course_redirect=introduction-to-javascript).
+- Sigue las actividades guiadas por Codeacademy con ayuda de las indicaciones de este tutorial.
+
+### ¿Qué son los ciclos?
+
+Son la manera de representar código que se ejecuta varias veces. Podemos correr el mismo segmento de código una determinada cantidad *X* de veces en lugar de copiarlo *X* veces.
+
+### Ciclos: Introducción a ciclos (1/8)
+
+Un ciclo permite ejecutar una misma sección de código un determinado número de veces.
+Como esto no se ha cubierto a profundidad, aquí se explican brevemente las partes de un FOR:
+
+```javascript
+for(let i = 0; i < 12; i++)
+{
+  // mostrar la variable i en consola
+  console.log(i);
+}
+```
+
+Dentro del paréntesis, vemos tres partes:
+- **let i = 0**: La variable **i** será el **iterador**, ésta se inicializa en 0 en este ejemplo.
+- **i < 12**: Es la **condición de parada**. El ciclo se ejecutará **(hará otra iteración)** todas las veces que la variable **i** sea **menor a 12**.
+- **i++**: Al finalizar cada iteración, **incrementa** el valor de **i** en 1.
+
+Dadas estas condiciones, podemos observar que el ciclo se ejecutará **12 veces (hará 12 iteraciones)**. En ellas, los valores de **i** serán **0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11** respectivamente. 
+
+Salida
+
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+```
+
+Estos son los valores que imprime el **console.log(i)** dentro del **for**, independientemente de que haya sido declarada e inicializada en 5 en otros puntos. Esto es gracias al alcance local.
+
+
+### Ciclos: Ciclando manualmente (2/8)
+
+1. Crear un arreglo **vacationSpots** con tres elementos. Puedes usar el siguiente ejemplo:
+
+```javascript
+let vacationSpots = ['Paris', 'Amsterdam', 'Berlin'];
+```
+
+2. Imprimir en consola los tres elementos del arreglo usando **console.log()** de cada uno.
+
+
+### Ciclos: Ciclos For (3/8)
+1. Es necesario convertir el código anterior a un ciclo for para evitar poner tres **console.log()** y sólo poner uno.
+
+   Tips:
+   - Es necesario usar **vacationSpotIndex** como el nombre del **iterador**
+   - Se puede usar **vacationSpots.length** en la condición de parada para siempre correr el código correctamente independientemente de    si conocemos la cantidas de elementos en el arreglo.
+   - El mismo **iterador** se puede usar como variable para acceder a **cada índice de vacationSpots**.
+
+2. Concatenar el texto **'I would love to visit '** a la impresión de cada elemento del arreglo.
+
+```javascript
+console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]);
+```
+
+### Ciclos: Ciclos For en reversa (4/8)
+
+1. Queremos imprimir los lugares del arreglo **vacationSpots** en orden inverso. Para esto podemos hacer lo siguiente:
+
+   Tips:
+   - Inicializar **vacationSpotIndex** como el nombre del **vacationSpots.length**.
+   - La **condición de parada** sería **vacationSpotIndex >= 0**. Recordemos que 0 es un índice válido en el arreglo.
+   - En lugar de **vacationSpotIndex++**, tendríamos **vacationSpotIndex--**. Para restarle 1 una vez.
+   
+   Dado esto, y suponiendo que el arreglo tenga 3 elementos, tenemos **4 iteraciones**, donde el **iterador** tendría los valores: **3, 2, 1, 0** en ese orden.
+   
+2. Lo anterior no funciona completamente. Vemos que se usa el iterador **vacationSpotIndex** para acceder al arreglo **vacationSpots**. Pero éste **no tiene ningún elemento en el índice 3**. ¿Cómo podemos solucionar esto?
+
+### Ciclos: Ciclos anidados (5/8)
+
+1. Crear un arreglo **myPlaces** con 3 nombres de lugares.
+2. Crear un arreglo **friendPlaces** con 3 nombres de lugares. **Uno de ellos debe ser un lugar que hayas puesto en myPlaces**.
+3. Crea un ciclo **for** que itere por todo el arreglo **myPlaces** como en las actividades previas. Cada vez que entre, hacer un **console.log()**, del elemento del arreglo al que corresponda el **iterador**. El iterador debe llamarse **myPlacesIndex**.
+4. Crea un ciclo **for** que esté **ADENTRO del cuerpo del ciclo for que creaste en el paso anterior**. Debe iterar por todo el arreglo **friendPlaces** como en las actividades previas. Cada vez que entre, hacer un **console.log()**, del elemento del arreglo al que corresponda el **iterador**. El iterador debe llamarse **friendPlacesIndex**.
+5. Quitar ambos **console.log()** del código (puedes sólo ponerlos como comentarios). Agregar un condicional **if** dentro del **for más adentro**, donde se revise si el elemento de cada iteración para los arreglos **myPlaces** y **friendPlaces** son los mismos. Si la condición del **if** se cumple, imprimir en consola el elemento que tienen en común.
