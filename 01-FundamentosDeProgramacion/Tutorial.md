@@ -1,4 +1,4 @@
-# Fundamentos de programación
+# Intro a JavaScript
 
 ### Contenidos
 - [Objetivos y alcance](#objectives) 
