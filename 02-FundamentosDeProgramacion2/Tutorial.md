@@ -681,3 +681,9 @@ while (condicion) {
 
 Veremos que el programa imprime valores siempre diferentes a **'Spade'**, salvo por el último que **necesariamente** será **'Spade'**. Esto se debe a que el **while** ejecutará **hasta que** el generador del número aleatorio para el **índice**, provoque que el valor de **currentCard** sea **'Spade'**.
 
+### Ciclos: Ciclos infinitos (7/8)
+
+Es común que un código se cicle infinitamente porque establecimos erróneamente alguna de las partes del ciclo.
+
+1. Encuentra el error en el ciclo **for** para que no ejecute infinitamente. 
+2. Descomenta la porción comentada del código y, posteriormente, adentro del **while** usa métodos de los arreglos para eliminar un elemento del arreglo **thingsToDo** en cada iteración y evitar que se cicle por la condición **thingsToDo.length > 3**. Sin modificar la longitud del arreglo en cada iteración, como tiene 5 elementos, se cumplirá infinitamente la condición y por eso ejecuta infinitamente también.
