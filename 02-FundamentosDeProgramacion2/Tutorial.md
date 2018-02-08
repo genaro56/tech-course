@@ -629,3 +629,55 @@ console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]);
 3. Crea un ciclo **for** que itere por todo el arreglo **myPlaces** como en las actividades previas. Cada vez que entre, hacer un **console.log()**, del elemento del arreglo al que corresponda el **iterador**. El iterador debe llamarse **myPlacesIndex**.
 4. Crea un ciclo **for** que esté **ADENTRO del cuerpo del ciclo for que creaste en el paso anterior**. Debe iterar por todo el arreglo **friendPlaces** como en las actividades previas. Cada vez que entre, hacer un **console.log()**, del elemento del arreglo al que corresponda el **iterador**. El iterador debe llamarse **friendPlacesIndex**.
 5. Quitar ambos **console.log()** del código (puedes sólo ponerlos como comentarios). Agregar un condicional **if** dentro del **for más adentro**, donde se revise si el elemento de cada iteración para los arreglos **myPlaces** y **friendPlaces** son los mismos. Si la condición del **if** se cumple, imprimir en consola el elemento que tienen en común.
+
+Al finalizar, tendrás un código similar al siguiente:
+
+```javascript
+// Declaracion de los arreglos
+let myPlaces = ['Paris', 'Amsterdam', 'Berlin'];
+let friendPlaces = ['Cancun', 'Los Cabos', 'Paris'];
+
+// Iterar por el arreglo myPlaces
+for(let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++)
+{
+  // Iterar por el arreglo friendPlaces
+  for(let friendPlacesIndex = 0; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++)
+	{
+    // Revisar si los lugares son los mismos
+    if(myPlaces[myPlacesIndex] === friendPlaces[friendPlacesIndex])
+    {
+      // Imprimir los lugares que los arreglos tengan en común
+      console.log(friendPlaces[friendPlacesIndex]);
+    }
+  }
+}
+```
+
+### Ciclos: Ciclos While (6/8)
+
+Los ciclos **while** se ejecutan **mientras que una condición se cumpla**. Así como en un **if**, se ejecuta un segmento de código si una condición se cumple, un **ciclo while** ejecutará un segmento de código tantas veces como se siga cumpliendo la condición.
+
+La sintaxis se ve de la siguiente manera:
+
+```javascript
+while (condicion) {
+  // cuerpo dentro del while
+}
+```
+
+1. Crear una variable **currentCard = 'Spade'**.
+2. Crear un ciclo **while** que use la condición **currentCard !== 'Spade'** - mientras que **currentCard NO sea 'Spade'**. 
+3. Dentro del cuerpo del **while**, agregar las siguientes líneas de código.
+
+```javascript
+  // Imprimir la carta que se tiene
+  console.log(currentCard);
+  
+  // Generar un número aleatorio entre 0 y 3 para escoger una nueva carta del arreglo
+  currentCard = cards[Math.floor(Math.random() * 4)];
+```
+
+4. Imprimir en consola, al final del código y afuera del **while** el valor de **currentCard**. Finalmente, cambiar el valor inicial de **currentCard = 'Spade'** a **currentCard = 'Heart'**.
+
+Veremos que el programa imprime valores siempre diferentes a **'Spade'**, salvo por el último que **necesariamente** será **'Spade'**. Esto se debe a que el **while** ejecutará **hasta que** el generador del número aleatorio para el **índice**, provoque que el valor de **currentCard** sea **'Spade'**.
+
