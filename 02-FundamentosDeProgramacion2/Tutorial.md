@@ -378,7 +378,7 @@ console.log(i);
 
 
 <a name="arrays"/></a>
-# Actividad 1: [Arreglos](https://www.codecademy.com/es/courses/learn-javascript-arrays/lessons/arrays/exercises/arrays?action=lesson_resume&course_redirect=introduction-to-javascript)
+# Actividad 3: [Arreglos](https://www.codecademy.com/es/courses/learn-javascript-arrays/lessons/arrays/exercises/arrays?action=lesson_resume&course_redirect=introduction-to-javascript)
 
 Instrucciones:
 - En el **syllabus** del curso, ir a la sección [Arrays - Interactive Lesson](https://www.codecademy.com/es/courses/learn-javascript-arrays/lessons/arrays/exercises/arrays?action=lesson_resume&course_redirect=introduction-to-javascript).
