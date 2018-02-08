@@ -1,4 +1,4 @@
-# Fundamentos de programación 2
+# Intro a JavaScript II
 
 ## Contenidos 
 - [Actividad 1: Funciones](#functions) 
