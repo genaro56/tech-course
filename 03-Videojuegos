@@ -1,0 +1,20 @@
+# Parte 1
+- ¿Qué es un room?
+- ¿Qué es un sprite?
+- ¿Por qué se invierte y con key_up y key_down?
+- point direction documentation
+
+# Parte 2
+
+- que hace este codigo?
+
+// Shooting
+if(mouse_check_button(mb_left))
+{
+	instance_create_layer(x, y, layer, obj_bullet);
+}
+
+
+direction = point_direction(x, y, mouse_x, mouse_y);
+direction = direction + random_range(-4, 4);
+- 
