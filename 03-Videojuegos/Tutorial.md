@@ -23,4 +23,4 @@ Se seguirán [8 video-tutoriales](https://www.youtube.com/watch?v=cEb4gzG8S24&li
 **Nota:** se recomienda dejar el tutorial #6 (sonido) hasta el final y realizarlo sólo si hay tiempo.
 
 ## Sprites
-En éste [fólder](!https://github.com/katiearriagam/tech-course/tree/master/03-Videojuegos/images) encontrarás todas las imágenes que necesitarás importar en tu juego. 
+En éste [fólder](https://github.com/katiearriagam/tech-course/tree/master/03-Videojuegos/images) encontrarás todas las imágenes que necesitarás importar en tu juego. 
