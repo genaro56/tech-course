@@ -4,7 +4,7 @@
 Desarrollar un videojuego en GameMaker con GameMaker Language (GML), que cubra las partes básicas de un *shooter*.
 El producto final será algo parecido a esto: [https://youtu.be/AZDZiFR-hOw](https://youtu.be/AZDZiFR-hOw).
 
-## Desarga de GameMaker Studio 2
+## Descarga de GameMaker Studio 2
 GameMaker descargar en este link: [https://account.yoyogames.com/downloads](https://account.yoyogames.com/downloads).
 
 ## Partes del juego
