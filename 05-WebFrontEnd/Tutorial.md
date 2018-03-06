@@ -5,6 +5,7 @@
 - [HTML](#html) 
 - [CSS](#css) 
 - [Javascript/jQuery](#js)
+- [Actividad](#act)
 
 <a name="prep"/></a>
 # Preparación
@@ -329,4 +330,139 @@ Todos los elementos de un HTML se consideran cajas (box) que siguen un modelo co
 - `padding`: el espacio que existe entre el contenido y el marco (border) del elemento HTML.
 - `border`: el marco del elemento HTML (como el marco de una imagen).
 - `margin`: el espacio que existe entre el border y otros elementos HTML.
+
+
+
+<a name="js"/></a>
+# JavaScript/jQuery
+
+### ¿Para qué nos sirve JavaScript en desarrollo web?
+- Modificar las vistas dinámicamente
+- Iniciar llamadas a una base de datos que maneje el sistema
+- Navegar a otras ventanas del sitio
+- Crear y modificar el comportamiento de los componentes de una manera dinámica
+- Mostrar y esconder elementos sin necesidad de volver a cargar la página
+
+### ¿Qué es jQuery?
+- Es una librería de JavaScript
+- Nos ayuda a simplificar el código que necesitamos escribir para realizar una acción
+- Reduce significativamente la cantidad de líneas que se requieren para hacer algo en JavaScript puro
+
+## Primer archivo de JavaScript
+- Crea un archivo llamado `main.js` y ponlo dentro de tu fólder `js/`.
+- En tu `index.html`, agrega una referencia a tu `main.js` de la siguiente manera justo antes de cerrar la etiqueta de `</body>`: 
+
+```html
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+```
+
+## Agregar la librería de jQuery
+- Para agregar la librería de jQuery, es necesario agregar un `<script>` con la siguiente línea al final de los tags `<head></head>`
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+```
+
+```html
+<head>
+  	<title>Mi blog</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+```
+**Nota:** en el ejemplo también se agrego un `<script>` de la librería de bootstrap. Ésta ahorra mucho tiempo en algunas funcionalidades (como crear un slideshow de fotos).
+
+## Agregando JS/jQuery a nuestra página
+
+
+Con la ayuda de jQuery, podemos acceder y modificar elementos del HTML de manera rápida, con una sintaxis similar a la de CSS.
+```js
+$("#id").doSomething();
+$(".class").doSomething();
+$("tag").doSomething();
+```
+
+Algunos de los métodos más usados son:
+```js
+// le agrega la clase "myClass" al objeto con el id dado
+$("#id").addClass("myClass");
+
+// le quita la clase "myClass" al objeto con el id dado
+$("#id").removeClass("myClass");
+
+// obtiene el valor del objeto con el id dado
+var myValue = $("#id").val();
+
+// modifica el valor del objeto con el id dado
+$("#id").val(myValue);
+```
+
+
+El siguiente es un ejemplo de cómo se puede crear un menú funcional dentro de una página que se actualice dinámicamente. 
+```js
+// función que corre cuando carga el documento
+$(document).ready(function(){
+	// impresión en consola para verificar que se cargó
+	console.log("Script cargado correctamente!");
+
+	/*
+		suscribir a todos los elementos del menu a una
+		función anónima para el evento click
+		ésta función ejecutará cada vez que un elemento de
+		la lista (li) que pertenezca a menú sea presionado
+	*/
+	$("#menu > li").on("click", function(){
+
+		/*
+			al elemento que tiene la clase shownElement, quitársela
+			y asignarle la clase hiddenElement
+		*/
+		$(".shownElement").addClass("hiddenElement").removeClass("shownElement");		
+		
+		/*
+			al elemento previamente seleccionado de la lista, quitarle la clase
+			de selected
+		*/
+		$(".selected").removeClass("selected");
+		
+		/*
+			al contenedor cuyo #id se llame igual que la clase del
+			elemento sobre el que hicimos click, quitarle la clase
+			hiddenElement que lo esconde de la vista, y ponerle la clase
+			shownElement que lo muestra en la vists
+		*/
+		var currentLi = $(this).attr("class");
+		$("#" + currentLi).removeClass("hiddenElement").addClass("shownElement");
+
+		/*
+			al elemento que invocó el evento, ponerle la clase 
+			selected para indicar que es el nuevo elemento
+			seleccionado del menu
+		*/
+		$(this).addClass("selected");
+	});
+});
+```
+
+<a name="act"/></a>
+# Actividad
+
+## Instrucciones
+Crear una página de cualquier tema de interés tuyo estilo blog. 
+- Debe implementar un menú de opciones que use JavaScript y jQuery.
+- Debe contener imágenes (pueden sacarse de internet y usar el URL de la imagen en lugar de bajarla)
+- Debe contener etiquetas de `header`
+- Debe contener etiquetas de `div`
+- Debe contener etiquetas de `ul`
+- Debe contener estilos de CSS (pueden usar cualquier CSS framework y complementarlo con su propio CSS)
+- Opcional: implementar en algún punto un slideshow de imágenes como el de la sección de Fotos de la [página de ejemplo](https://codepen.io/anon/pen/XZLzMy)
+
+## Ejemplo
+En [este ejemplo de página](https://codepen.io/anon/pen/XZLzMy) puedes ver un blog como el que debes hacer. Puedes [ver el código de la página de una manera más legible aquí](https://github.com/katiearriagam/tech-course/tree/master/05-WebFrontEnd/HelloWorld).
 
