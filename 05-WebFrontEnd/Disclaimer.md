@@ -1,0 +1,1 @@
+El ejemplo presentado en este directorio fue realizado durante la clase y bajo la supervisión del instructor del curso Desarrollo de aplicaciones web en el Tec de Monterrey y se usa para propósitos ilustrativos únicamente. 
