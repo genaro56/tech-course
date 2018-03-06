@@ -173,7 +173,80 @@ Lo anterior nos genera un resultado como el siguiente:
 ![links](https://github.com/katiearriagam/tech-course/blob/master/images/links.PNG)
 
 ### Input
+En una página, se pueden ingresar valores de diferentes maneras. Si queremos crear, por ejemplo, un registro o una encuesta, es probable que presentemos diferentes maneras de ingresar valores, como se muestra en la siguiente imagen. 
 
+![registry](https://github.com/katiearriagam/tech-course/blob/master/images/registry.PNG)
+
+El siguiente fragmento de HTML, muestra cada elemento presentado en el formulario de registro anterior:
+
+```html
+	<body>
+		<form>
+			<fieldset>
+				<legend>Registro</legend>
+				<!-- Entrada de texto -->
+				<label>Nombre</label>
+				<input type="text" name="name">
+				<br>
+
+				<!-- Entrada de texto -->
+				<label>Email</label>
+				<input type="text" name="email">
+				<br>
+
+				<!-- Entrada de contraseña -->
+				<label>Constraseña</label>
+				<input type="Password" name="password">
+				<br>
+
+				<!-- Entrada de opciones (dropdown) -->
+				<label>País</label>
+				<select>
+					<option value="" disabled selected>Selecciona tu país</option>
+					<option>Mexico</option>
+					<option>Estados Unidos</option>
+					<option>Rusia</option>
+					<option>Suiza</option>
+				</select>
+				<br>
+
+				<!-- Entrada de opciones (radio buttons) -->
+				<label>Género</label>
+				<br>
+				<input type="radio" name="gender" value="m" checked> Mujer <br>
+				<input type="radio" name="gender" value="h"> Hombre <br>
+				<br>
+				<input type="reset" value="Cancelar">
+				<input type="submit" value="Registrar">
+			</fieldset>
+		</form>
+	</body>
+```
 
 ### Div
+El div es una de las maneras para organizar elementos en el HTML. Es un bloque que enciera elementos para agruparlos. 
+
 ### Span
+El span es una de las maneras para organizar elementos en el HTML. Es un bloque que enciera elementos para agruparlos. La diferencia entre el div y el span es que este último usa solamente el espacio que necesita, mientras que el div usa toda la línea (la anchura completa de su contenedor).
+
+El siguiente segmento muestra mejor la diferencia entre un div y un span:
+
+```html
+<body>
+	<div style="background-color:#82ccdd">
+		<label>Div 1</label>
+	</div>
+	<div style="background-color:#b8e994">
+		<label>Div 2</label>
+	</div>
+	<span style="background-color:#82ccdd">
+		<label>Span 1</label>
+	</span>
+	<span style="background-color:#b8e994">
+		<label>Span 2</label>
+	</span>
+</body>
+```
+
+![divspan](https://github.com/katiearriagam/tech-course/blob/master/images/divspan.PNG)
+
