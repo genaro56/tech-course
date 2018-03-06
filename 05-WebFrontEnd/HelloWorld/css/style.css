@@ -50,11 +50,12 @@ ul#menu li{
 	position: absolute;
 	top: 20%;
 	left: 2%;
-    border: 0px;
-    padding: 0px;
-    font-weight: 30px;
-    font-size: 10em;
-    width: 100%;
+    	border: 0px;
+    	padding: 0px;
+    	font-weight: 30px;
+    	font-size: 10em;
+    	width: 100%;
+	transform: translate(0, 50%);
 }
 
 #photos{
