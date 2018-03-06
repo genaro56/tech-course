@@ -269,17 +269,64 @@ El siguiente segmento muestra mejor la diferencia entre un div y un span:
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 ```
-## Agregar estilos al HTML
+## Agregar CSS al HTML
 - Es necesario usar los atributos `id=""` y `class=""` en nuestras etiquetas. 
 - El atributo `id=""` debe ser único para cada elemento HTML.
 - El atributo `class=""` puede compartirse entre varios elementos HTML para asignarles un mismo estilo.
+- Es necesario que uses estos atributos para poder referenciarlos posteriormente en el CSS. 
+- En [este ejemplo de página](https://codepen.io/anon/pen/XZLzMy) puedes ver cómo los `id` y las `class` se agregan en el HTML y se usan en el CSS. Puedes [ver el código de la página de una manera más legible aquí](https://github.com/katiearriagam/tech-course/tree/master/05-WebFrontEnd/HelloWorld).
+
+Como habrás notado, hay tres maneras de agregar estilos en el CSS:
+
+```css
+#id{
+ 	/* Estilos que se aplican a un objeto único en el HTML*/
+}
+
+.class{
+	/* Estilos que se aplican a un conjunto de objetos en el HTML*/
+}
+
+tag{
+	/* Estilos que se aplican a todos los elementos del mismo tipo*/
+}
+```
+
+### Estilos comúnes
+
+La siguiente es una lista de estilos que se agregan comúnmente (como se ve en la [página de ejemplo](https://codepen.io/anon/pen/XZLzMy)). 
+
+- `color`: se refiere al color del texto.
+- `background-color`: se refiere al color del fondo del contenedor.
+- `background-color`: se refiere al color del fondo del contenedor.
+- `font-size`: se refiere al tamaño del texto.
+- `font-weight`: se refiere al grosor del texto.
+- `list-style`: se refiere al estilo de viñetas de una lista.
+- `width`: se refiere a la anchura que toma el contenido dentro de su contenedor.
+
+### Tips
+- CSS Cheat Sheet (https://websitesetup.org/css3-cheat-sheet/) -> contiene una guía completa de los estilos que se pueden agregar con CSS. 
+- El uso de **CSS frameworks** ahorra mucho tiempo al momento de desarrollar. En la [página de ejemplo](https://codepen.io/anon/pen/XZLzMy) se usa CSS y JS de un tercero llamado **Bootstrap**. Esto nos ayuda a crear, por ejemplo, el carrusel de la sección de fotos de manera rápida. Para agregarlo debemos poner referencia a esto en el head del HTML. En el siguiente ejemplo de hace referencia a bootstrap y otros recursos externos similares.
+
+```html
+<head>
+  	<title>Mi blog</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+```
 
 ## CSS Box Model
 
-Todos los elementos de un HTML se consideran cajas (box) que siguen un modelo con 4 partes diferentes. 
+Todos los elementos de un HTML se consideran cajas (box) que siguen un modelo con 4 partes diferentes. El `padding`, `border` y `margin` también son elementos que comúnmente se modifican en el CSS.  
 ![cssboxmodel](https://github.com/katiearriagam/tech-course/blob/master/images/cssboxmodel.PNG)
 - Content (Contenido): lo que contiene el elemento HTML.
-- Padding: el espacio que existe entre el contenido y el marco (border) del elemento HTML.
-- Border: el marco del elemento HTML (como el marco de una imagen).
-- Margin (margen): el espacio que existe entre el border y otros elementos HTML.
+- `padding`: el espacio que existe entre el contenido y el marco (border) del elemento HTML.
+- `border`: el marco del elemento HTML (como el marco de una imagen).
+- `margin`: el espacio que existe entre el border y otros elementos HTML.
 
