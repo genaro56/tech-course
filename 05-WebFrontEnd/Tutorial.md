@@ -1,4 +1,4 @@
-# Desarrollo de aplicaciones web: Front-end
+# Desarrollo Web: Front-end
 
 ## Contenidos 
 - [Preparación](#prep)
