@@ -4,8 +4,7 @@
 - [Preparación](#prep)
 - [HTML](#html) 
 - [CSS](#css) 
-- [Javascript](#js) 
-- [jQuery](#jquery)
+- [Javascript/jQuery](#js)
 
 <a name="prep"/></a>
 # Preparación
@@ -249,4 +248,25 @@ El siguiente segmento muestra mejor la diferencia entre un div y un span:
 ```
 
 ![divspan](https://github.com/katiearriagam/tech-course/blob/master/images/divspan.PNG)
+
+<a name="css"/></a>
+# CSS
+
+### ¿Qué es CSS?
+- Significa Cascading Style Sheets
+- Define el estilo de una página.
+- Los elementos de HTML pueden tener diferentes estilos
+- Puede aplicar un mismo estilo a varios elementos para mantener consistencia.
+
+## Primer archivo CSS
+- Crea un archivo llamado `style.css` y ponlo dentro de tu fólder `css/`.
+- En tu `index.html`, agrega una referencia a tu `style.css` de la siguiente manera: 
+
+```html
+<head>
+	<title>Mi primera página</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+```
 
