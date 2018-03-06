@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registry</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Registry Form</h1>
+	<ul id="menu">
+		<li class="home">Home</li>
+		<li class="about">About</li>
+		<li class="selected registry">Registry</li>
+		<li class="contact">Contact</li>
+		<li class="copyright">Copyright</li>
+	</ul>
+		<div id="home" class="hiddenElementMenu">Home content</div>
+		<div id="about" class="hiddenElementMenu">About content</div>
+		<div id="registry" class="elementSelectedMenu">
+			<fieldset>
+				<legend> New account registry </legend>
+				<span class="info">Your information is safe with us.</span>
+				<p>Complete Name</p>
+				<input id="userName" class="formElement" type="text" name="CompleteName">
+				<span class="errorMessage" id="errorUserName">Please provide your complete name.</span>
+				<br>
+				<p>Email</p>
+				<input id="userEmail" class="formElement" type="text" name="Email">
+				<span class="errorMessage" id="errorUserEmail">Please provide an email address.</span> 
+				<br>
+				<p>Password</p>
+				<input id="userPassword" class="formElement" type="Password" name="Password">
+				<span class="errorMessage" id="errorUserPassword">Please provide your password.</span>
+				<br>
+				<p>Confirm Password</p>
+				<input id="userConfirmPassword" class="formElement" type="Password" name="ConfirmPassword">
+				<span class="errorMessage" id="errorUserConfirmPassword">Match your password here.</span>
+				<br>
+				<p>Country</p>
+				<div class="errorMessage" id="errorUserCountry">Please select a country.</div>
+				<br>
+				<select id="userCountry">
+					<option value="0" >Select your country</option>
+					<option value="1">Mexico</option>
+					<option value="2">USA</option>
+					<option value="3">Russia</option>
+					<option value="4">Germany</option>
+				</select>
+				<br>
+				<p>Gender</p>
+				<div class="errorMessage" id="errorUserGender">Please choose a gender.</div>
+				<br>
+				<input id="genderF" type="radio" name="gender" value="male"> Male <br>
+				<input id="genderM" type="radio" name="gender" value="female"> Female <br>
+				<br>
+				<input id="cancelForm" type="submit" value="Cancel">
+				<input id="submitForm" type="submit" value="Submit">
+			</fieldset>
+		</div>
+		<div id="contact" class="hiddenElementMenu">Contact content</div>
+		<div id="copyright" class="hiddenElementMenu">Copyright content</div>
+</body>
+</html>
