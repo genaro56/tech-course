@@ -58,7 +58,7 @@ Si abres tu `index.html` en tu browser (Google Chrome, Firefox, Safari), verás 
 ## Etiquetas de HTML
 Las etiquetas de HTML nos permiten agregar elementos como títulos, párrafos, secciones, imágenes y demás. Las siguientes etiquetas se agregan todas dentro de la sección de ``<body> </body>``.
 
-### Header
+### Encabezados
 Son etiquetas hechas para agregar títulos numeradas del 1-6, donde originalmente lo que cambia es el tamaño del título. Por ejemplo, si cambiamos el **body** al siguiente código:
 
 ```html
@@ -76,7 +76,7 @@ Esto nos produce un resultado como el siguiente. Notemos que los títulos se hac
 ![header](https://github.com/katiearriagam/tech-course/blob/master/images/headers.PNG)
 
 
-### Paragraph
+### Párrafos
 Sirve para poner párrafos en la página. Salta una línea al final. Si en el **body** agregamos dos párrafos de la siguiente manera:
 
 ```html
@@ -89,7 +89,7 @@ Sirve para poner párrafos en la página. Salta una línea al final. Si en el **
 Esto nos produce un resultado como el siguiente. Notemos que hay una línea en blanco entre los dos párrafos.
 ![paragraph](https://github.com/katiearriagam/tech-course/blob/master/images/paragraphs.PNG)
 
-### Lists
+### Listas
 Sirven para enlistar elementos. Tenemos listas ordenadas y no-ordenadas. Podemos crear ambas de la siguiente manera:
 
 ```html
@@ -120,9 +120,60 @@ El código anterior nos resulta en una lista ordenada de libros, y una lista no 
 
 ![lists](https://github.com/katiearriagam/tech-course/blob/master/images/lists.PNG)
 
-### Images
-### Links
-### Tables
+Cabe mencionar que las listas pueden una gran diversidad de objetos en sus elementos. Por ejemplo, podemos hacer una lista de botones, que posteriormente con estilos agregados puede convertirse en el menú de la página.
+
+
+```html
+<body>
+    <ul>
+    	<li><button>Botón 1</button></li>
+    	<li><button>Botón 2</button></li>
+    	<li><button>Botón 3</button></li>
+    	<li><button>Botón 4</button></li>
+    	<li><button>Botón 5</button></li>
+    	<li><button>Botón 6</button></li>
+    </ul>
+</body>
+```
+
+![button lists](https://github.com/katiearriagam/tech-course/blob/master/images/buttonList.PNG)
+
+### Imágenes
+Se pueden agregar imágenes que estén en nuestro fólder `img\` e imágenes que encontremos en sitios externos (copiando el URL de la imagen). Generalmente preferimos la primera opción porque así tenemos completo control sobre la existencia de la imagen (no corremos el riesgo de que sea borrada en cualquier momento). 
+
+- En tu fólder `img\` guarda cualquier imagen. La imagen de ejemplo se llama `wit.png`.
+- Agrega el siguiente código.
+
+```html
+<body>
+  <img src="img\wit.png" alt="WIT Logo"> 
+</body>
+```
+
+Notarás en tu página algo como la imagen a continuación:
+
+![image](https://github.com/katiearriagam/tech-course/blob/master/images/image.PNG)
+
+
+### Ligas
+En una página es común que haya ligas (links) de un sitio a otro o de una página a otra dentro del mismo sitio. Adicionalmente, las ligas pueden ser otra cosa además de texto (imágenes, botones, etcétera). 
+
+```html
+<body>
+   	<a href="http://womenintech.mx/contenido.html">Visita la página del contenido de WIT Code!</a>
+   
+    <!-- br es un salto de línea -->
+   	<br>
+		
+    <a href="http://fb.com/womenintechmx"> <img src="img\wit.png" alt="WIT Logo"> </a>
+</body>
+```
+
+Lo anterior nos genera un resultado como el siguiente:
+![links](https://github.com/katiearriagam/tech-course/blob/master/images/links.PNG)
+
 ### Input
+
+
 ### Div
 ### Span
