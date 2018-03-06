@@ -269,4 +269,17 @@ El siguiente segmento muestra mejor la diferencia entre un div y un span:
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 ```
+## Agregar estilos al HTML
+- Es necesario usar los atributos `id=""` y `class=""` en nuestras etiquetas. 
+- El atributo `id=""` debe ser único para cada elemento HTML.
+- El atributo `class=""` puede compartirse entre varios elementos HTML para asignarles un mismo estilo.
+
+## CSS Box Model
+
+Todos los elementos de un HTML se consideran cajas (box) que siguen un modelo con 4 partes diferentes. 
+![cssboxmodel](https://github.com/katiearriagam/tech-course/blob/master/images/cssboxmodel.PNG)
+- Content (Contenido): lo que contiene el elemento HTML.
+- Padding: el espacio que existe entre el contenido y el marco (border) del elemento HTML.
+- Border: el marco del elemento HTML (como el marco de una imagen).
+- Margin (margen): el espacio que existe entre el border y otros elementos HTML.
 
