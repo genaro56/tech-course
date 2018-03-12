@@ -29,3 +29,5 @@ Con el fin de mantener nuestra aplicación escalable y fácil de modificar, así
 
 ### MVC
 Una de las arquitecturas más comunes es el `Model-View-Controller (MVC)`. Éste se divide en tres partes.
+
+![mvc](https://github.com/katiearriagam/tech-course/blob/master/images/mvc.png)
