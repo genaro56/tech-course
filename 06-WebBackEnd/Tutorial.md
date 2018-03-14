@@ -115,4 +115,6 @@ Nótese que lo que especificamos para cada propiedad/columan en la tabla (como e
 ![commentsScreenshot](https://github.com/katiearriagam/tech-course/blob/master/images/commentsScreenshot.PNG)
 
 
-6. En tu JavaScript, agrega código para 
+6. En tu JavaScript, agrega código para que se agreguen los comentarios al principio. Puedes usar la función `prepend` y puedes ayudarte de la siguiente [pista](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/hint02.html).
+
+## Agregar AJAX 
