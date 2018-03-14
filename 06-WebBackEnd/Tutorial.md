@@ -108,4 +108,11 @@ Nótese que lo que especificamos para cada propiedad/columan en la tabla (como e
 
 4. Corre el script para crear la tabla de Comentarios en la base de datos.
 
+## Agregar espacios para comentarios
 
+5. En tu HTML y CSS, agrega un espacio para **postear** y **ver** comentarios en forma de lista en cualquiera de las secciones de tu página (en la de fotos, por ejemplo). Si pasas más de 30 minutos tratando de diseñar este espacio, puedes ayudarte con la siguiente [pista](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/hint01.html). El siguiente es un ejemplo de cómo se puede ver:
+
+![commentsScreenshot](https://github.com/katiearriagam/tech-course/blob/master/images/commentsScreenshot.PNG)
+
+
+6. En tu JavaScript, agrega código para 
