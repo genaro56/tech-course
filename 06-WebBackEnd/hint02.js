@@ -9,6 +9,7 @@ function postComment(){
 					'</div>' + 
 				'</blockquote>' + 
 			'</li>';
+		$("#commentList").prepend(stringToPrepend);
 		$("#commentField").val("");
 	}
 }
