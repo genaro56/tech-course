@@ -4,7 +4,6 @@
 - [Preparación](#prep)
 - [Arquitectura 3-tier](#layers)
 - [SQL](#sql) 
-- [PHP](#php)
 - [Actividad](#act)
 
 <a name="prep"/></a>
@@ -79,9 +78,9 @@ CREATE TABLE Comentarios (
   /* el cuerpo del comentario */
 	body text NOT NULL,
   /* cantidad de like reactions que tiene el comentario */
-	likeCount UNSIGNED,
+	likeCount int(11) UNSIGNED,
   /* cantidad de love reactions que tiene el comentario */
-  loveCount UNSIGNED
+  loveCount int(11) UNSIGNED
 );
 ```
 **Contenidos básicos de una propiedad**
@@ -94,3 +93,19 @@ Nótese que lo que especificamos para cada propiedad/columan en la tabla (como e
 - not null: (opcional) si queremos obligar a que los valores siempre deban contener un valor
 - primary key: (opcional) todas las tablas deben tener un ID (o llave primaria) que distinga cada fila en la tabla de las demás
 - auto_increment: (opcional) usualmente se usa con los primary keys para numerarlos automáticamente
+
+# Actividad
+
+## Dar de alta la base de datos
+
+1. En tu buscador (Firefox de preferencia :)) abre `localhost/` como si fueras a abrir una página. Debes ver la siguiente pantalla:
+
+![localHomeHost](https://github.com/katiearriagam/tech-course/blob/master/images/localhostHome.PNG)
+
+2. Da click arriba a la derecha donde dice `phpMyAdmin`
+
+3. Crea una nueva base de datos en donde dice `Nueva` a la izquierda. Nombra tu base de datos `myFirstDB`.
+
+4. Corre el script para crear la tabla de Comentarios en la base de datos.
+
+
