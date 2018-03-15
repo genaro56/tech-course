@@ -79,6 +79,7 @@ Nótese que lo que especificamos para cada propiedad/columan en la tabla (como e
 - primary key: (opcional) todas las tablas deben tener un ID (o llave primaria) que distinga cada fila en la tabla de las demás
 - auto_increment: (opcional) usualmente se usa con los primary keys para numerarlos automáticamente
 
+<a name="act"/></a>
 # Actividad
 
 ## Dar de alta la base de datos
@@ -145,7 +146,7 @@ var jsonObject = {
 
 PHP es un lenguaje que sirve para comunicarse con el servidor. Aquí es donde correremos nuestro SQL. La sintaxis de PHP es un poco diferente a lo que hemos visto.
 
-8. Crea `data\photo-comments.php`
+8. Crea `data\addComments.php`
 
 9. Lee el siguiente código comentado. El código inserta en la base de datos el comentario que haya enviado como parámetro la llamada de AJAX en JavaScript.
 
@@ -198,3 +199,13 @@ PHP es un lenguaje que sirve para comunicarse con el servidor. Aquí es donde co
 	echo json_encode(['success' => 'success']);
 ```
 
+10. Tenemos el siguiente problema:
+
+Hasta el momento, los comentarios se guardan en la base de datos pero si volvemos a cargar la página (Ctrl + R), veremos que no están los comentarios que pusimos anteriormente. Esto es porque aún no los cargamos de la base de datos. 
+
+Implementa la función en JavaScript que haga una llamada de AJAX a un nuevo archivo PHP `data\loadComments.php`, el cual recupere todos los comentarios que están guardados en la base de datos y los agregue a la lista de comentarios previos.
+
+Si te atoras, puedes ayudarte con los siguientes archivos:
+
+- Función de [JavaScript `loadComments()`](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/hint04.js)
+- [loadComments.php](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/loadComments.php)
