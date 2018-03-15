@@ -1,20 +1,30 @@
+function formatCommentString(comment){
+	var stringToPrepend = '<li>' + 
+				'<blockquote>' + 
+					'<div class="commentContent">' + 
+						comment + 
+					'</div>' + 
+				'</blockquote>' + 
+			'</li>';
+	return stringToPrepend;
+}
+
 function postComment(){
 	console.log("clicked post comment");
 
 	if($("#commentField").val() !== null && $("#commentField").val() !=""){
-		var stringToPrepend = '<li>' + 
-				'<blockquote>' + 
-					'<div class="commentContent">' + 
-						$("#commentField").val() + 
-					'</div>' + 
-				'</blockquote>' + 
-			'</li>';
-		
-		AddCommentToDB($("#commentField").val(), stringToPrepend);
 
+		var stringToPrepend = formatCommentString($("#commentField").val());
+		/* 
+			!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			descomentamos esta línea 
+			!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		*/
+		AddCommentToDB($("#commentField").val(), stringToPrepend);
 		$("#commentField").val("");
 	}
 }
+
 
 function AddCommentToDB(comment, stringToPrepend){
 
