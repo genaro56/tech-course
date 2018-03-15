@@ -2,7 +2,6 @@
 
 ## Contenidos 
 - [Preparación](#prep)
-- [Arquitectura 3-tier](#layers)
 - [SQL](#sql) 
 - [Actividad](#act)
 
@@ -12,25 +11,11 @@
 ### Objetivo
 - Agregar back-end a la página que iniciamos la sesión pasada.
 - Aprender a recuperar y actualizar información en bases de datos.
-- Aplicar la teoría de arquitectura 3-tier en nuestra aplicación web.
 
 ### Instrucciones
 1. Descarga y haz el set-up de [XAMPP](https://www.apachefriends.org/index.html).
 2. Mueve el fólder que contiene la página que desarrollaste en la sesión anterior al path `xampp\htdocs\`.
 3. Abre tu `index.html` y comprueba que todo funcione apropiadamente.
-
-<a name="layers"/></a>
-# Arquitectura 3-tier
-
-### ¿Qué es? 
-
-Con el fin de mantener nuestra aplicación escalable y fácil de modificar, así como mucho otros atributos de calidad que son importantes al hacer software de gran escala, implementamos arquitecturas.
-
-### MVC
-Una de las arquitecturas más comunes (y la que usaremos aquí) es el `Model-View-Controller (MVC)`. Éste se divide en tres partes.
-
-![mvc](https://github.com/katiearriagam/tech-course/blob/master/images/mvc.png)
-
 
 <a name="sql"/></a>
 # SQL
@@ -108,13 +93,108 @@ Nótese que lo que especificamos para cada propiedad/columan en la tabla (como e
 
 4. Corre el script para crear la tabla de Comentarios en la base de datos.
 
-## Agregar espacios para comentarios
+## Agregar espacios para comentarios en tu página
 
-5. En tu HTML y CSS, agrega un espacio para **postear** y **ver** comentarios en forma de lista en cualquiera de las secciones de tu página (en la de fotos, por ejemplo). Si pasas más de 30 minutos tratando de diseñar este espacio, puedes ayudarte con la siguiente [pista](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/hint01.html). El siguiente es un ejemplo de cómo se puede ver:
+5. En tu HTML y CSS, agrega un espacio para **postear** y **ver** comentarios en forma de lista en cualquiera de las secciones de tu página (en la de fotos, por ejemplo). Si pasas más de 20 minutos tratando de diseñar este espacio, puedes ayudarte con la siguiente [pista](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/hint01.html). 
+
+Necesitarás:
+- Un espacio para que el usuario escriba el comentario
+- Un botón para "postear" el comentario escrito
+- Una lista que almacene los comentarios posteados
+
+El siguiente es un ejemplo de cómo se puede ver:
 
 ![commentsScreenshot](https://github.com/katiearriagam/tech-course/blob/master/images/commentsScreenshot.PNG)
 
+6. En tu JavaScript, agrega código para que se agreguen los comentarios al principio. Puedes usar la función `prepend` y puedes ayudarte de la siguiente [pista](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/hint02.js).
 
-6. En tu JavaScript, agrega código para que se agreguen los comentarios al principio. Puedes usar la función `prepend` y puedes ayudarte de la siguiente [pista](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/hint02.html).
+## Agregar PHP/AJAX 
 
-## Agregar AJAX 
+### AJAX
+
+AJAX (Asynchronous JavaScript + XML) es conjunto de técnicas para hacer peticiones asíncronas a un servidor. Se agrega en el código de JavaScript y el formato es el siguiente.
+
+```javascript
+$.ajax({
+            type: "POST", // tipo de request - comúnmente POST (enviar información al servidor) o GET (recuperar información del servidor) 
+            url: "data/photo-comments.php", // path en el que se encuentra la información
+            data : jsonObject, // información que se envía al servidor
+            dataType : "json", // formato de la información que se envía al servidor
+            ContentType : "application/json", // formato de la información que se envía al servidor 
+            success: function(jsonData) { 
+	    	// función que se ejecuta cuando la petición se ejecutó correctamente
+            },
+            error: function(errorMsg){
+            	// función que se ejecuta cuando hay errores en la petición
+            }
+        });
+```
+
+7. Usa el ejemplo anterior para crear tu propia llamada de AJAX para guardar los comentarios en el servidor. Deberás crear un url a un archivo de PHP `url: "data/photo-comments.php"`. Ése lo crearemos e implementaremos en un momento. Si te atoras o quieres verificar tu código, puedes usar la siguiente [pista](https://github.com/katiearriagam/tech-course/blob/master/06-WebBackEnd/hint03.js).
+
+Notemos que es necesario enviar la información al servidor en formato json. Podemos crearlo de la siguiente manera:
+
+```javascript
+var jsonObject = {
+	// myComment es el string que contiene el comentario del usuario
+	"comment" : myComment
+};
+```
+
+### PHP
+
+PHP es un lenguaje que sirve para comunicarse con el servidor. Aquí es donde correremos nuestro SQL. La sintaxis de PHP es un poco diferente a lo que hemos visto.
+
+8. Crea `data\photo-comments.php`
+
+9. Lee el siguiente código comentado. El código inserta en la base de datos el comentario que haya enviado como parámetro la llamada de AJAX en JavaScript.
+
+```php
+<?php
+	/* permitimos que PHP trabaje con json*/
+	header('Content-type: application/json');
+	header('Accept: application/json');
+
+	/* 
+		establecemos los valores de las variables 
+		que necesitamos para conectar con el servidor
+	*/
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "myfirstdb";
+	
+	/* establecemos la conexión con la base de datos */
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	
+	/* si hay un error con la conexión, nos detenemos y regresamos un error */
+	if ($conn->connect_error) {
+		header("HTTP/1.1 500 Bad connection, portal down.");
+		die("The server is down, we couldn't stablish the data base connection.");
+	}
+
+	/* obtenemos la variable que mandamos en jsonObject*/
+	$comment = $_POST["comment"];
+
+	/* 
+		creamos un query en SQL que inserte los valores a una nueva fila 
+		en la base de datos
+	*/
+	$sql = "INSERT INTO comentarios (body) VALUES ('$comment')";
+
+	/* ejecutamos el query */
+	$result = mysqli_query($conn, $sql);
+
+	/* si el query generó un error nos detenemos */
+	if (!$result) {
+		header("HTTP/1.1 500 Something happened, try again later.");
+		die("Something went wrong: " . $sql);
+	}
+
+	/* cerramos la conexión */
+	mysqli_close($conn);
+
+	/* regresamos un success de respuesta */
+	echo json_encode(['success' => 'success']);
+```
+
