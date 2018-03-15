@@ -15,7 +15,7 @@ function postComment(){
 	if($("#commentField").val() !== null && $("#commentField").val() !=""){
 
 		var stringToPrepend = formatCommentString($("#commentField").val());
-		AddCommentToDB($("#commentField").val(), stringToPrepend);
+		// AddCommentToDB($("#commentField").val(), stringToPrepend);
 		$("#commentField").val("");
 	}
 }
