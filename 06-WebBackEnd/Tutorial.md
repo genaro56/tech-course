@@ -146,7 +146,7 @@ var jsonObject = {
 
 ```javascript
 $(document).ready(function(){
-	$("idOfButton").on('click', postComment);
+	$("#idOfButton").on('click', postComment);
 }
 ```
 
