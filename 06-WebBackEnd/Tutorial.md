@@ -142,6 +142,15 @@ var jsonObject = {
 };
 ```
 
+**Recuerda hacer la llamada del AJAX desde un evento de click a tu botón para postear el comentario.**
+
+```javascript
+$(document).ready(function(){
+	$("idOfButton").on('click', postComment);
+}
+```
+
+
 ### PHP
 
 PHP es un lenguaje que sirve para comunicarse con el servidor. Aquí es donde correremos nuestro SQL. La sintaxis de PHP es un poco diferente a lo que hemos visto.
