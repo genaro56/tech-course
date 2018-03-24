@@ -1,0 +1,21 @@
+PODS:
+  - YXWaveView (0.5.0)
+
+DEPENDENCIES:
+  - YXWaveView (from `https://github.com/yourtion/YXWaveView`)
+
+EXTERNAL SOURCES:
+  YXWaveView:
+    :git: https://github.com/yourtion/YXWaveView
+
+CHECKOUT OPTIONS:
+  YXWaveView:
+    :commit: bfa09498dc05232084a109b87c2aa13af37f4470
+    :git: https://github.com/yourtion/YXWaveView
+
+SPEC CHECKSUMS:
+  YXWaveView: 63bd4f3e56e2739b855cf7487ffbcc4bfe291bcf
+
+PODFILE CHECKSUM: 5519e3dc102a082cba31f904ce6399b489df91c8
+
+COCOAPODS: 1.4.0
